@@ -1,0 +1,6 @@
+# Adds the Russian language pack to the web composition. The row loads this
+# package: the Node half is a no-op, the browser half (lib/client.js) registers
+# the `ru` language and its dictionaries.
+- insert:
+    - id: locale-ru
+      name: dsh-locale-ru
