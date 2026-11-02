@@ -34,17 +34,23 @@ dsh plugin add github:<ваш-ник>/dsh-locale-ru
 Затем перезапустите приложение (или дайте HMR перечитать граф) и выберите
 «Русский» в настройках.
 
-### 3. Вручную (офлайн)
+### 3. Вручную (офлайн, другой компьютер)
+
+Скачайте `dsh-locale-ru-0.1.0.zip` из релизов (или скопируйте папку пакета),
+распакуйте и запустите из неё:
 
 ```powershell
-# 1) скопировать пакет в профиль
-$profile = "$env:USERPROFILE\.dsh\profiles\desktop"
-New-Item -ItemType Directory -Force "$profile\node_modules" | Out-Null
-Copy-Item -Recurse . "$profile\node_modules\dsh-locale-ru"
-
-# 2) включить бандл в $profile\package.json (dsh.profile.bundles) и указать зависимость
-# 3) перезапустить приложение
+powershell -ExecutionPolicy Bypass -File install.ps1
 ```
+
+Скрипт скопирует пакет в `%USERPROFILE%\.dsh\profiles\desktop\node_modules\dsh-locale-ru`
+и добавит его в `dsh.profile.bundles` профиля. Перезапустите DSH и выберите язык.
+Если профиль называется иначе — `-Profile <имя>`, если DSH_HOME другой —
+`-DshHome <путь>`.
+
+Для установки через интерфейс (Plugins → Install) подойдёт `.tgz` из релизов:
+укажите полный путь к файлу `dsh-locale-ru-0.1.0.tgz` — плагин-менеджер поставит
+его как локальный пакет.
 
 Язык появится в списке; предпочтение сохраняется в профиле (`locale.preference: ru`).
 

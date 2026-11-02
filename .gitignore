@@ -6,3 +6,5 @@ Thumbs.db
 .npm-cache/
 *.tgz
 
+dist/
+
