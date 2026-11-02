@@ -21,7 +21,7 @@
   },
   "files": [
     "lib/*.js",
-    "ru/*.json",
+    "locales/*/*.json",
     "locale/*.json",
     "cordis.patch.yml",
     "README.md",

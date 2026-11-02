@@ -258,7 +258,7 @@ if (!asarPath) {
 }
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const enDir = path.join(root, 'en');
+const enDir = path.join(root, 'locales', 'en');
 const asar = openAsar(asarPath);
 const bundles = [];
 walk(asar.index, '', (rel, node) => {

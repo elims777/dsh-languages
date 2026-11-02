@@ -12,15 +12,15 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const source = fs.readFileSync(path.join(root, 'lib', 'client.js'), 'utf8');
 
-let captured;
-const sandbox = { window: { __ModuleLoader__: { load: (def) => { captured = def; } } } };
-vm.createContext(sandbox);
-vm.runInContext(source, sandbox, { filename: 'lib/client.js' });
-
 const fail = (message) => {
   console.error(`FAIL: ${message}`);
   process.exit(1);
 };
+
+let captured;
+const sandbox = { window: { __ModuleLoader__: { load: (def) => { captured = def; } } } };
+vm.createContext(sandbox);
+vm.runInContext(source, sandbox, { filename: 'lib/client.js' });
 
 if (!captured) fail('bundle did not call window.__ModuleLoader__.load');
 if (captured.id !== 'dsh-locale-ru') fail(`unexpected module id ${captured.id}`);
@@ -36,6 +36,7 @@ const ctx = {
   },
   locale: {
     addLanguage(input) {
+      if (languages.some((language) => language.id === input.id)) fail(`duplicate language ${input.id}`);
       languages.push(input);
       return () => {};
     },
@@ -50,14 +51,27 @@ const ctx = {
 moduleExports.apply(ctx);
 
 if (!moduleExports.inject?.includes('locale')) fail('inject must declare the locale service');
-if (languages.length !== 1 || languages[0].id !== 'ru') fail(`expected exactly one ru language, got ${JSON.stringify(languages)}`);
-if (languages[0].fallback !== 'en') fail('ru must fall back to en');
-if (dictionaries.size !== fs.readdirSync(path.join(root, 'en')).length) fail('not every namespace registered a dictionary');
 
+const catalog = JSON.parse(fs.readFileSync(path.join(root, 'locales.json'), 'utf8')).languages;
+const expected = catalog.filter((language) => fs.existsSync(path.join(root, 'locales', language.id)));
+if (languages.length !== expected.length) fail(`expected ${expected.length} languages, got ${languages.length}`);
+for (const language of expected) {
+  const registered = languages.find((entry) => entry.id === language.id);
+  if (!registered) fail(`language ${language.id} was not registered`);
+  if (registered.label !== language.label) fail(`language ${language.id} label mismatch`);
+  if (registered.fallback !== 'en') fail(`language ${language.id} must fall back to en`);
+}
+
+const namespaceCount = fs.readdirSync(path.join(root, 'locales', 'en')).length;
+if (dictionaries.size !== expected.length * namespaceCount) {
+  fail(`expected ${expected.length * namespaceCount} dictionaries, got ${dictionaries.size}`);
+}
 for (const [key, dict] of dictionaries) {
-  if (!key.endsWith(':ru')) fail(`dictionary registered under ${key}`);
   if (Object.keys(dict).length === 0) fail(`${key} is empty`);
 }
 
 const strings = [...dictionaries.values()].reduce((n, dict) => n + Object.keys(dict).length, 0);
-console.log(`OK: ${languages.map((l) => `${l.id}/${l.label}/${l.fallback}`).join(', ')}, ${dictionaries.size} namespaces, ${strings} strings`);
+console.log(
+  `OK: ${languages.map((language) => `${language.id}/${language.label}`).join(', ')}, ` +
+    `${namespaceCount} namespaces, ${strings} strings`,
+);

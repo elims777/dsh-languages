@@ -2,12 +2,13 @@
 /**
  * Builds lib/client.js from the translation sources.
  *
- * - `en/*.json` — English dictionaries extracted from the shipped DSH client
- *   bundles (source of truth for the key set of every namespace);
- * - `ru/*.json` — Russian translations, one file per namespace.
+ * - `locales/en/<ns>.json` — English dictionaries extracted from the shipped
+ *   DSH client bundles (source of truth for the key set of every namespace);
+ * - `locales/<lang>/<ns>.json` — translations, one file per namespace;
+ * - `locales.json` — the ordered language catalog (id + native label).
  *
- * The emitted bundle is a plain DSH client module: it registers the `ru`
- * language definition and one dictionary per namespace. Running the build is
+ * The emitted bundle is a plain DSH client module: it registers every language
+ * definition and one dictionary per language and namespace. The build is
  * deterministic; CI checks that the committed bundle matches the sources.
  */
 import fs from 'node:fs';
@@ -15,13 +16,15 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const enDir = path.join(root, 'en');
-const ruDir = path.join(root, 'ru');
+const localesDir = path.join(root, 'locales');
 
 const PACKAGE_NAME = 'dsh-locale-ru';
-const LANGUAGE = { id: 'ru', label: 'Русский', fallback: 'en' };
+const FALLBACK = 'en';
+const LANGUAGE_ID = /^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$/;
 
-const readNamespaces = (dir) => {
+const catalog = JSON.parse(fs.readFileSync(path.join(root, 'locales.json'), 'utf8')).languages;
+
+const readNamespaceDir = (dir) => {
   const result = new Map();
   for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.json')).sort()) {
     result.set(path.basename(file, '.json'), JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8')));
@@ -29,50 +32,75 @@ const readNamespaces = (dir) => {
   return result;
 };
 
-const english = readNamespaces(enDir);
-const russian = readNamespaces(ruDir);
+const english = readNamespaceDir(path.join(localesDir, FALLBACK));
 const problems = [];
-const dictionaries = {};
-let translated = 0;
-let untranslated = 0;
+const warnings = [];
+const languages = [];
 
-for (const [ns, en] of english) {
-  const dict = russian.get(ns);
-  if (!dict) {
-    problems.push(`${ns}: no translation file (ru/${ns}.json)`);
+for (const entry of catalog) {
+  const { id, label } = entry ?? {};
+  if (typeof id !== 'string' || !LANGUAGE_ID.test(id)) problems.push(`invalid language id: ${JSON.stringify(id)}`);
+  if (typeof label !== 'string' || label.trim() === '') problems.push(`${id}: empty language label`);
+  if (id === FALLBACK) problems.push(`${FALLBACK} is built into DSH and must not be translated here`);
+  if (languages.some((language) => language.id === id)) problems.push(`duplicate language id: ${id}`);
+  const dir = path.join(localesDir, id);
+  if (!fs.existsSync(dir)) {
+    warnings.push(`${id}: locales/${id} not translated yet, skipped`);
     continue;
   }
-  const missing = Object.keys(en).filter((key) => !(key in dict));
-  const extra = Object.keys(dict).filter((key) => !(key in en));
-  if (missing.length) problems.push(`${ns}: missing ${missing.length} keys, e.g. ${missing.slice(0, 5).join(', ')}`);
-  if (extra.length) problems.push(`${ns}: extra ${extra.length} keys, e.g. ${extra.slice(0, 5).join(', ')}`);
-
-  const ordered = {};
-  for (const [key, source] of Object.entries(en)) {
-    const value = dict[key];
-    if (typeof value !== 'string') {
-      problems.push(`${ns}: non-string value for ${key}`);
-      continue;
-    }
-    if (value.trim() === '' && source.trim() !== '') problems.push(`${ns}: empty value for ${key}`);
-    const want = (source.match(/\{\w+\}/g) ?? []).sort().join(',');
-    const got = (value.match(/\{\w+\}/g) ?? []).sort().join(',');
-    if (want !== got) problems.push(`${ns}: placeholders differ for ${key} (${want} vs ${got})`);
-    if (value === source && /[A-Za-z]{3}/.test(source)) untranslated += 1;
-    else translated += 1;
-    ordered[key] = value;
-  }
-  dictionaries[ns] = ordered;
+  languages.push({ id, label, dir });
 }
 
-for (const ns of russian.keys()) {
-  if (!english.has(ns)) problems.push(`${ns}: translation without an English source`);
+const dictionaries = {};
+const untranslated = {};
+
+for (const language of languages) {
+  const translated = readNamespaceDir(language.dir);
+  const dicts = {};
+  const kept = [];
+  for (const [ns, en] of english) {
+    const dict = translated.get(ns);
+    if (!dict) {
+      problems.push(`${language.id}: missing locales/${language.id}/${ns}.json`);
+      continue;
+    }
+    const missing = Object.keys(en).filter((key) => !(key in dict));
+    const extra = Object.keys(dict).filter((key) => !(key in en));
+    if (missing.length) problems.push(`${language.id}: ${ns}: missing ${missing.length} keys, e.g. ${missing.slice(0, 5).join(', ')}`);
+    if (extra.length) problems.push(`${language.id}: ${ns}: extra ${extra.length} keys, e.g. ${extra.slice(0, 5).join(', ')}`);
+
+    const ordered = {};
+    for (const [key, source] of Object.entries(en)) {
+      const value = dict[key];
+      if (typeof value !== 'string') {
+        problems.push(`${language.id}: ${ns}: non-string value for ${key}`);
+        continue;
+      }
+      if (value.trim() === '' && source.trim() !== '') problems.push(`${language.id}: ${ns}: empty value for ${key}`);
+      const want = (source.match(/\{\w+\}/g) ?? []).sort().join(',');
+      const got = (value.match(/\{\w+\}/g) ?? []).sort().join(',');
+      if (want !== got) problems.push(`${language.id}: ${ns}: placeholders differ for ${key} (${want} vs ${got})`);
+      if (value === source && /[A-Za-z]{3}/.test(source)) kept.push(key);
+      ordered[key] = value;
+    }
+    dicts[ns] = ordered;
+  }
+  for (const ns of translated.keys()) {
+    if (!english.has(ns)) problems.push(`${language.id}: ${ns}: translation without an English source`);
+  }
+  dictionaries[language.id] = dicts;
+  untranslated[language.id] = kept.length;
 }
 
 if (problems.length) {
-  console.error(problems.join('\n'));
+  console.error(problems.slice(0, 40).join('\n'));
+  if (problems.length > 40) console.error(`... and ${problems.length - 40} more`);
   process.exit(1);
 }
+
+const languageLiterals = languages
+  .map((language) => `\t\t\t{ id: ${JSON.stringify(language.id)}, label: ${JSON.stringify(language.label)}, fallback: ${JSON.stringify(FALLBACK)} },`)
+  .join('\n');
 
 const body = `window.__ModuleLoader__.load({
 \tid: ${JSON.stringify(PACKAGE_NAME)},
@@ -80,22 +108,27 @@ const body = `window.__ModuleLoader__.load({
 \t\tvar module = { exports: {} };
 \t\tvar exports = module.exports;
 \t\tObject.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-\t\t// Generated by tools/build.mjs from en/ and ru/. Do not edit by hand.
+\t\t// Generated by tools/build.mjs from locales/ and locales.json. Do not edit by hand.
+\t\t/** Language catalog, in the order shown in Settings. */
+\t\tconst LANGUAGES = [
+${languageLiterals}
+\t\t];
+\t\t/** Dictionaries keyed by language id, then by locale namespace. */
 \t\tconst DICTIONARIES = ${JSON.stringify(dictionaries)};
 \t\t/** Cordis client services this plugin needs. */
 \t\tconst inject = ["locale"];
 \t\t/**
-\t\t* Register the Russian language definition and every namespace dictionary.
+\t\t* Register every language definition and its namespace dictionaries.
 \t\t* @param ctx - client cordis context.
 \t\t*/
 \t\tfunction apply(ctx) {
-\t\t\tctx.effect(() => ctx.locale.addLanguage({
-\t\t\t\tid: ${JSON.stringify(LANGUAGE.id)},
-\t\t\t\tlabel: ${JSON.stringify(LANGUAGE.label)},
-\t\t\t\tfallback: ${JSON.stringify(LANGUAGE.fallback)}
-\t\t\t}), "locale-ru: language definition");
-\t\t\tfor (const [ns, dictionary] of Object.entries(DICTIONARIES)) {
-\t\t\t\tctx.effect(() => ctx.locale.register(ns, ${JSON.stringify(LANGUAGE.id)}, dictionary), \`locale-ru: \${ns} dictionary\`);
+\t\t\tfor (const language of LANGUAGES) {
+\t\t\t\tctx.effect(() => ctx.locale.addLanguage(language), \`locale: \${language.id} language definition\`);
+\t\t\t}
+\t\t\tfor (const [language, namespaces] of Object.entries(DICTIONARIES)) {
+\t\t\t\tfor (const [ns, dictionary] of Object.entries(namespaces)) {
+\t\t\t\t\tctx.effect(() => ctx.locale.register(ns, language, dictionary), \`locale: \${language} \${ns} dictionary\`);
+\t\t\t\t}
 \t\t\t}
 \t\t}
 \t\texports.apply = apply;
@@ -107,6 +140,8 @@ const body = `window.__ModuleLoader__.load({
 
 fs.mkdirSync(path.join(root, 'lib'), { recursive: true });
 fs.writeFileSync(path.join(root, 'lib', 'client.js'), body);
-console.log(
-  `namespaces ${Object.keys(dictionaries).length}, strings ${translated + untranslated} (translated ${translated}, kept as-is ${untranslated}), bytes ${Buffer.byteLength(body)}`,
-);
+
+const strings = languages.length * [...english.values()].reduce((n, dict) => n + Object.keys(dict).length, 0);
+console.log(`languages ${languages.length}, namespaces ${english.size}, strings ${strings}, bytes ${Buffer.byteLength(body)}`);
+for (const [id, count] of Object.entries(untranslated)) console.log(`  ${id}: ${count} strings kept identical to English`);
+for (const warning of warnings) console.log(`  warning: ${warning}`);
