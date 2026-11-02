@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-  Installs the dsh-locale-ru language pack into a DeepSeek Harness profile.
+  Installs the dsh-locales language pack into a DeepSeek Harness profile.
 
 .DESCRIPTION
   Copies the package into <DSH_HOME>/profiles/<profile>/node_modules and adds it
@@ -31,7 +31,7 @@ if (-not (Test-Path (Join-Path $Source 'package.json'))) {
   throw "package.json not found in '$Source'. Run the script from the package folder or pass -Source."
 }
 if (-not (Test-Path (Join-Path $Source 'cordis.patch.yml'))) {
-  throw "cordis.patch.yml not found in '$Source' - this is not the dsh-locale-ru package."
+  throw "cordis.patch.yml not found in '$Source' - this is not the dsh-locales package."
 }
 
 $profileDir = Join-Path $DshHome "profiles\$Profile"
@@ -40,7 +40,7 @@ if (-not (Test-Path $manifestPath)) {
   throw "Profile '$Profile' not found: $manifestPath. Pass -Profile <name> or -DshHome <path>."
 }
 
-$target = Join-Path $profileDir 'node_modules\dsh-locale-ru'
+$target = Join-Path $profileDir 'node_modules\dsh-locales'
 $targetFull = [System.IO.Path]::GetFullPath($target)
 $sourceFull = [System.IO.Path]::GetFullPath($Source)
 if ($sourceFull -ne $targetFull) {
@@ -66,15 +66,15 @@ if ($null -eq $json.dsh.profile.bundles) {
 }
 
 $bundles = @($json.dsh.profile.bundles)
-if ($bundles -notcontains 'dsh-locale-ru') {
-  $json.dsh.profile.bundles = @($bundles + 'dsh-locale-ru')
+if ($bundles -notcontains 'dsh-locales') {
+  $json.dsh.profile.bundles = @($bundles + 'dsh-locales')
 }
 
 if ($null -eq $json.dependencies) {
   $json | Add-Member -NotePropertyName dependencies -NotePropertyValue ([pscustomobject]@{})
 }
-if (-not $json.dependencies.PSObject.Properties['dsh-locale-ru']) {
-  $json.dependencies | Add-Member -NotePropertyName 'dsh-locale-ru' -NotePropertyValue "file:$target"
+if (-not $json.dependencies.PSObject.Properties['dsh-locales']) {
+  $json.dependencies | Add-Member -NotePropertyName 'dsh-locales' -NotePropertyValue "file:$target"
 }
 
 $utf8 = New-Object System.Text.UTF8Encoding($false)
