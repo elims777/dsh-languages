@@ -1,7 +1,7 @@
 {
   "trigger": "Einstellungen",
   "shortcut.open": "Einstellungen öffnen",
-  "desktop.update.available": "Update",
+  "desktop.update.available": "Aktualisieren",
   "desktop.update.checking": "Suche nach Updates…",
   "desktop.update.progress": "{percent}%",
   "desktop.update.verifying": "Updatedateien werden überprüft…",
@@ -34,10 +34,10 @@
   "connection.reconnect": "Getrennt, jetzt erneut verbinden",
   "connection.restart": "Verbindung wird neu aufgebaut, jetzt erneut verbinden",
   "hostRelease.title": "Dienstversion geändert",
-  "hostRelease.description": "Die Dienstversion hat sich geändert. Diese Seite hat Live-Aktualisierungen pausiert; zum Laden der neuen Version neu laden.",
+  "hostRelease.description": "Die Dienstversion hat sich geändert. Diese Seite hat Live-Aktualisierungen ausgesetzt; zum Laden der neuen Version neu laden.",
   "hostRelease.service": "Dienst",
   "hostRelease.page": "Seite",
   "hostRelease.unknown": "Unbekannt",
-  "hostRelease.reload": "Neu laden, um die neue Version zu laden",
+  "hostRelease.reload": "Neu laden, um die neue Version zu übernehmen",
   "hostRelease.later": "Nicht jetzt"
 }

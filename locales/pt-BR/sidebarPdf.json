@@ -1,0 +1,17 @@
+{
+  "zoomControls": "Controles de zoom",
+  "zoomMenu": "Escolher o zoom",
+  "zoomOut": "Reduzir o zoom",
+  "zoomIn": "Ampliar o zoom",
+  "zoomFitWidth": "Ajustar à largura",
+  "zoomValue": "{percent}%",
+  "title": "PDF",
+  "pageImage": "Página {page} do PDF",
+  "loading": "Renderizando o documento...",
+  "rendering": "Renderizando a página…",
+  "failed": "Não é possível exibir o PDF: {message}",
+  "password": "Este PDF exige uma senha; prévias protegidas por senha não são compatíveis.",
+  "workerFailed": "O processo de renderização do PDF não pôde continuar. Tente novamente.",
+  "unsupported": "A prévia do PDF exige o conteúdo completo do arquivo.",
+  "retry": "Tentar novamente"
+}

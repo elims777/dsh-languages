@@ -1,0 +1,17 @@
+{
+  "title": "Documento do Office",
+  "loading": "Renderizando documento...",
+  "retry": "Tentar novamente",
+  "viewMissingFonts": "Fontes ausentes: {count}. Clique para ver.",
+  "missingFontsTitle": "Fontes ausentes",
+  "missingFontsDescription": "Estas fontes não estão disponíveis para esta prévia. O texto e o layout podem diferir do documento original.",
+  "missingFontsCount": "Fontes: {count}",
+  "closeDetails": "Fechar detalhes das fontes",
+  "unavailable": "As prévias do Office não estão disponíveis. Ative o serviço de prévia de documentos no computador que executa o DeepSeek Harness.",
+  "invalid": "Não é possível visualizar este arquivo do Office. Ele pode estar danificado, protegido por senha ou ter a extensão errada.",
+  "tooLarge": "O arquivo do Office ou o PDF convertido excede o limite de tamanho da prévia. Reduza o tamanho do arquivo ou ajuste a configuração da prévia.",
+  "failed": "A conversão do Office não gerou um PDF utilizável. Verifique o arquivo e tente novamente.",
+  "timeout": "A conversão do Office expirou. Tente novamente.",
+  "busy": "A prévia do Office está ocupada. Tente novamente em instantes.",
+  "changed": "O arquivo mudou durante a leitura. Reabra a prévia."
+}

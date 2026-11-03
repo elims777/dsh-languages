@@ -1,9 +1,9 @@
 {
-  "zoomControls": "Zoom-Steuerung",
-  "zoomMenu": "Zoom auswählen",
+  "zoomControls": "Zoomsteuerung",
+  "zoomMenu": "Zoom wählen",
   "zoomOut": "Verkleinern",
   "zoomIn": "Vergrößern",
-  "zoomFitWidth": "Breite anpassen",
+  "zoomFitWidth": "An Breite anpassen",
   "zoomValue": "{percent}%",
   "title": "PDF",
   "pageImage": "PDF-Seite {page}",

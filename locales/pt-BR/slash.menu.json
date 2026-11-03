@@ -1,0 +1,11 @@
+{
+  "command": "Comandos",
+  "skill": "Habilidades",
+  "subagent": "Subagentes",
+  "loading": "Carregando…",
+  "drill.aria": "Navegar pela pasta",
+  "drill.hint": "Navegar pela pasta",
+  "drill.key": "Tab",
+  "crumbs.aria": "Navegação de pastas",
+  "suggestions.aria": "Sugestões de gatilho"
+}

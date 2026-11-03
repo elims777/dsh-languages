@@ -1,0 +1,14 @@
+{
+  "title": "Permissão",
+  "description": "Escolha o modo de permissão padrão para novas sessões",
+  "loading": "Carregando",
+  "unavailable": "Indisponível",
+  "preset.readOnly": "Somente leitura",
+  "preset.workspaceWrite": "Gravação na área de trabalho",
+  "preset.fullAccess": "Acesso total",
+  "confirm.title": "Ativar o Acesso total?",
+  "confirm.description": "O Acesso total permite que novas sessões reduzam as etapas de confirmação e executem mais ações diretamente, incluindo operações sensíveis, alterações de arquivos ou comandos externos. Use apenas quando confiar nas tarefas seguintes.",
+  "confirm.acknowledge": "Entendo os riscos e quero continuar",
+  "confirm.cancel": "Cancelar",
+  "confirm.enable": "Ativar o Acesso total"
+}
