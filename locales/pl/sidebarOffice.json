@@ -1,0 +1,17 @@
+{
+  "title": "Dokument Office",
+  "loading": "Renderowanie dokumentu...",
+  "retry": "Ponowić",
+  "viewMissingFonts": "Brakujące kroje pisma: {count}. Kliknij, aby wyświetlić.",
+  "missingFontsTitle": "Brakujące kroje pisma",
+  "missingFontsDescription": "Te kroje pisma są niedostępne w tym podglądzie. Tekst i układ mogą różnić się od oryginalnego dokumentu.",
+  "missingFontsCount": "Kroje pisma: {count}",
+  "closeDetails": "Zamknąć szczegóły krojów pisma",
+  "unavailable": "Podglądy Office są niedostępne. Włącz usługę podglądu dokumentów na komputerze, na którym uruchomiono DeepSeek Harness.",
+  "invalid": "Nie można wyświetlić podglądu tego pliku Office. Może być uszkodzony, zabezpieczony hasłem lub mieć nieprawidłowe rozszerzenie.",
+  "tooLarge": "Plik Office lub przekonwertowany PDF przekracza limit rozmiaru podglądu. Zmniejsz rozmiar pliku lub dostosuj konfigurację podglądu.",
+  "failed": "Konwersja Office nie utworzyła użytecznego PDF. Sprawdź plik i spróbuj ponownie.",
+  "timeout": "Przekroczono limit czasu konwersji Office. Spróbuj ponownie.",
+  "busy": "Podgląd Office jest zajęty. Spróbuj ponownie za chwilę.",
+  "changed": "Plik zmienił się podczas odczytu. Otwórz podgląd ponownie."
+}

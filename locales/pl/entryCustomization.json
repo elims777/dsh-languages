@@ -1,0 +1,7 @@
+{
+  "install": "Przeglądać inne wtyczki",
+  "create": "Utworzyć własną wtyczkę",
+  "createPrompt.sidebar": "Utworzyć wtyczkę DSH z pozycją w lewym panelu bocznym.",
+  "createPrompt.conversation": "Utworzyć wtyczkę widoku rozmowy DSH.",
+  "createPrompt.rightbar": "Utworzyć wtyczkę DSH z pozycją w prawym panelu bocznym."
+}

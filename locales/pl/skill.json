@@ -1,0 +1,10 @@
+{
+  "row.title": "Umiejętność",
+  "row.running": "Ładowanie umiejętności",
+  "row.preparing": "Przygotowywanie do załadowania umiejętności",
+  "row.failed": "Nie udało się załadować umiejętności",
+  "row.stopped": "Ładowanie umiejętności zatrzymano",
+  "row.instructions": "Instrukcje",
+  "row.inspect": "Sprawdź",
+  "menu.userOnly": "tylko dla użytkownika"
+}

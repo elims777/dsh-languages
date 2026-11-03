@@ -1,0 +1,14 @@
+{
+  "title": "Pętla agenta",
+  "description": "Kontroluj sposób wywoływania narzędzi przez Agenta.",
+  "maxParallel": "Równoległe wywołania narzędzi",
+  "maxParallelHint": "Górny limit bezpiecznych równoległych wywołań działających jednocześnie w jednym kroku.",
+  "overridden": "Przesłonięte",
+  "reset": "Przywróć domyślne",
+  "readOnly": "To wdrożenie przechowuje ustawienia tylko do odczytu.",
+  "unavailable": "Ta wtyczka nie jest wczytana, więc nie można jej teraz skonfigurować.",
+  "save": "Zapisz",
+  "saving": "Zapisywanie…",
+  "saveFailed": "Wdrożenie nie przyjęło tych wartości; pozostawiono je do poprawienia.",
+  "invalidNumber": "Wpisz liczbę lub pozostaw puste, aby użyć wartości domyślnej."
+}

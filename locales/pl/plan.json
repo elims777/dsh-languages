@@ -1,0 +1,19 @@
+{
+  "chip.label": "Plan",
+  "preview.title": "Plan",
+  "preview.document": "Plan · Markdown",
+  "preview.action": "Otwórz",
+  "preview.open": "Otwórz plan w panelu bocznym",
+  "preview.full": "Zobacz cały plan",
+  "preview.openNamed": "Otwórz plan: {title}",
+  "preview.loading": "Ładowanie planu…",
+  "preview.failed": "Nie udało się załadować planu",
+  "preview.invalidAddress": "Nieprawidłowy adres planu",
+  "preview.historyUnavailable": "Historia sesji jest niedostępna",
+  "preview.notFound": "Nie znaleziono tego planu",
+  "preview.unavailable": "Podgląd planu jest niedostępny",
+  "preview.expired": "Ten tymczasowy podgląd planu wygasł. Otwórz go ponownie z karty oczekującego przeglądu.",
+  "chip.on.aria": "Tryb planu włączony, naciśnij, aby wyłączyć",
+  "chip.on.title": "Tryb planu włączony — kliknij, aby wyłączyć (/plan off)",
+  "chip.exitFailed": "Nie udało się wyjść z trybu planu"
+}

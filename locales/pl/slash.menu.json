@@ -1,0 +1,11 @@
+{
+  "command": "Polecenia",
+  "skill": "Umiejętności",
+  "subagent": "Podagenci",
+  "loading": "Ładowanie…",
+  "drill.aria": "Przeglądaj folder",
+  "drill.hint": "Przeglądaj folder",
+  "drill.key": "Tab",
+  "crumbs.aria": "Nawigacja po folderach",
+  "suggestions.aria": "Sugestie wyzwalaczy"
+}

@@ -1,0 +1,13 @@
+{
+  "zoomControls": "Sterowanie powiększeniem",
+  "zoomMenu": "Wybierz powiększenie",
+  "zoomOut": "Pomniejsz",
+  "zoomIn": "Powiększ",
+  "zoomFitWidth": "Dopasuj do szerokości",
+  "zoomValue": "{percent}%",
+  "title": "Obraz",
+  "preview": "Podgląd obrazu: {name}",
+  "loading": "Renderowanie dokumentu...",
+  "failed": "Nie udało się wyświetlić tego obrazu.",
+  "unsupported": "Podgląd obrazu wymaga pełnej zawartości pliku."
+}

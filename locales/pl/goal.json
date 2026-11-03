@@ -1,0 +1,14 @@
+{
+  "phase.active": "Cel w toku",
+  "phase.active.disarmed": "Nieaktywny cel",
+  "phase.paused": "Wstrzymany cel",
+  "phase.blocked": "Zablokowany cel",
+  "objective.aria": "Treść celu",
+  "commandInput.aria": "Pole polecenia",
+  "action.save": "Zapisz cel",
+  "action.cancel": "Anuluj edycję",
+  "action.pause": "Wstrzymaj cel",
+  "action.resume": "Wznów cel",
+  "action.edit": "Edytuj cel",
+  "action.clear": "Wyczyść cel"
+}

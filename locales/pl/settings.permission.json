@@ -1,0 +1,14 @@
+{
+  "title": "Uprawnienia",
+  "description": "Wybierz domyślny tryb uprawnień dla nowych sesji",
+  "loading": "Wczytywanie",
+  "unavailable": "Niedostępne",
+  "preset.readOnly": "Tylko odczyt",
+  "preset.workspaceWrite": "Zapis w obszarze roboczym",
+  "preset.fullAccess": "Pełny dostęp",
+  "confirm.title": "Włączyć pełny dostęp?",
+  "confirm.description": "Pełny dostęp pozwala nowym sesjom ograniczyć kroki potwierdzania i wykonywać więcej działań bezpośrednio, w tym wrażliwe operacje, zmiany plików i polecenia zewnętrzne. Używaj go tylko wtedy, gdy ufasz kolejnym zadaniom.",
+  "confirm.acknowledge": "Rozumiem ryzyko i chcę kontynuować",
+  "confirm.cancel": "Anuluj",
+  "confirm.enable": "Włącz pełny dostęp"
+}

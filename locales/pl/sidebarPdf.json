@@ -1,0 +1,17 @@
+{
+  "zoomControls": "Sterowanie powiększeniem",
+  "zoomMenu": "Wybierz powiększenie",
+  "zoomOut": "Pomniejsz",
+  "zoomIn": "Powiększ",
+  "zoomFitWidth": "Dopasuj do szerokości",
+  "zoomValue": "{percent}%",
+  "title": "PDF",
+  "pageImage": "Strona PDF {page}",
+  "loading": "Renderowanie dokumentu...",
+  "rendering": "Renderowanie strony…",
+  "failed": "Nie można wyświetlić PDF: {message}",
+  "password": "Ten PDF wymaga hasła; podgląd plików chronionych hasłem nie jest obsługiwany.",
+  "workerFailed": "Proces renderowania PDF nie mógł kontynuować. Spróbuj ponownie.",
+  "unsupported": "Podgląd PDF wymaga pełnej zawartości pliku.",
+  "retry": "Ponów"
+}
