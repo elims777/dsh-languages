@@ -1,0 +1,17 @@
+{
+  "section.files": "Arquivos e pastas",
+  "section.subagents": "Subagentes",
+  "section.sessions": "Sessões",
+  "candidate.noCwd": "(sem cwd)",
+  "crumb.root": "Área de trabalho",
+  "fileOpen.title": "Não foi possível abrir o arquivo",
+  "fileOpen.failed": "Não foi possível abrir “{path}”. Tente novamente ou feche esta mensagem.",
+  "fileOpen.close": "Fechar",
+  "fileOpen.retry": "Tentar novamente",
+  "time.now": "agora",
+  "time.minutes": "{n}min",
+  "time.hours": "{n}h",
+  "time.days": "{n}d",
+  "time.months": "{n} mês",
+  "time.years": "{n} ano"
+}

@@ -1,0 +1,19 @@
+{
+  "shortcut.noSession": "Zuerst eine Sitzung auswählen",
+  "type.label": "Dateien",
+  "guide.title": "Dateien im Arbeitsbereich",
+  "guide.description": "Dateien im Arbeitsbereich dieser Sitzung durchsuchen",
+  "loading": "Wird gelesen…",
+  "empty": "Leeres Verzeichnis",
+  "truncated": "Zu viele Einträge, nur ein Teil wird angezeigt.",
+  "noWorkspace": "Diese Sitzung hat kein Arbeitsbereichsverzeichnis.",
+  "reload": "Neu laden",
+  "autoRefresh": "Automatisch aktualisieren",
+  "autoRefresh.enable": "Automatische Aktualisierung aktivieren",
+  "autoRefresh.disable": "Automatische Aktualisierung deaktivieren",
+  "entry.other": "Weder Datei noch Verzeichnis, daher nicht zu öffnen.",
+  "error.notFound": "Dieses Verzeichnis existiert nicht mehr. Möglicherweise wurde es verschoben oder gelöscht.",
+  "error.outsideWorkspace": "Dieses Verzeichnis liegt außerhalb des Arbeitsbereichs und wird von der Seitenleiste nicht gelesen.",
+  "error.notDirectory": "Das ist kein Verzeichnis.",
+  "error.unavailable": "Lesen fehlgeschlagen: {message}"
+}

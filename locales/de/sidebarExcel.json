@@ -1,0 +1,17 @@
+{
+  "title": "Tabelle",
+  "language": "en",
+  "loading": "Dokument wird gerendert...",
+  "invalid": "Diese Tabelle konnte nicht geöffnet werden. Format, Inhalt oder Passwortschutz prüfen.",
+  "tooLarge": "Diese Arbeitsmappe überschreitet die Größenbeschränkung der Vorschau.",
+  "timeout": "Zeitüberschreitung beim Öffnen dieser Arbeitsmappe. Eine kleinere Datei versuchen.",
+  "encoding": "Diese Textkodierung konnte nicht gelesen werden. Die Datei als UTF-8 oder UTF-16 mit BOM speichern und erneut versuchen.",
+  "formulaWarning": "Diese Arbeitsmappe enthält Formeln. Angezeigte Ergebnisse können fehlen oder ungenau sein.",
+  "unsupportedNotice": "Diese Vorschau unterstützt {features} in dieser Arbeitsmappe nicht. Für den vollen Umfang in einer Systemanwendung öffnen.",
+  "charts": "Diagramme",
+  "images": "Bilder",
+  "shapes": "Formen",
+  "conditionalFormatting": "bedingte Formatierung",
+  "featureSeparator": ", ",
+  "retry": "Erneut versuchen"
+}

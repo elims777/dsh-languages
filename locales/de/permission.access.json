@@ -1,0 +1,19 @@
+{
+  "mode": "Zugriffsmodus, aktuell: {name}",
+  "close": "Schließen",
+  "preset.readOnly": "Nur lesen",
+  "preset.workspaceWrite": "Arbeitsbereich beschreibbar",
+  "preset.fullAccess": "Vollzugriff",
+  "confirm.title": "Vollzugriff aktivieren?",
+  "confirm.description": "Vollzugriff reduziert Bestätigungsschritte und erlaubt dem Agent, mehr Aktionen direkt auszuführen, einschließlich sensibler Vorgänge, Dateiänderungen oder externer Befehle. Nur nutzen, wenn der aktuellen Aufgabe vertraut wird.",
+  "confirm.acknowledge": "Risiken verstanden; fortfahren",
+  "confirm.cancel": "Abbrechen",
+  "confirm.enable": "Vollzugriff aktivieren",
+  "auto.label": "Automatische Prüfung",
+  "auto.badge": "EXP",
+  "auto.description": "Ohne Sandbox ausführen; jeder native Werkzeugaufruf und jeder PTC-Innenaufruf wird zuvor durch eine experimentelle Prüfung desselben Modells bewertet.",
+  "auto.confirm.title": "Automatische Prüfung aktivieren (experimentell)?",
+  "auto.confirm.description": "Die automatische Prüfung läuft ohne Sandbox. Vor jedem nativen Werkzeugaufruf und jedem PTC-Innenaufruf prüft dasselbe Modell wie der aktuelle Agent, ob der Aufruf zulässig ist; abgelehnte Aufrufe werden einzeln bestätigt oder verworfen. Die Funktion ist experimentell, kann Aktionen fälschlich zulassen oder ablehnen und verbraucht zusätzliche Token.",
+  "auto.confirm.acknowledge": "Risiken verstanden; fortfahren",
+  "auto.confirm.enable": "Automatische Prüfung aktivieren"
+}

@@ -1,0 +1,7 @@
+{
+  "waiting": "Warten auf Bestätigung",
+  "detail.aria": "Details zur Bestätigung",
+  "escalation": "Werkzeug {toolName} fordert privilegierte Ausführung an",
+  "reject": "Ablehnen",
+  "allowOnce": "Einmal erlauben"
+}

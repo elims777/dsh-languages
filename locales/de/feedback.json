@@ -1,0 +1,22 @@
+{
+  "action.like": "Gute Antwort",
+  "action.likeActive": "Bewertung entfernen",
+  "action.dislike": "Schlechte Antwort",
+  "action.dislikeActive": "Bewertung entfernen",
+  "dialog.title": "Feedback senden",
+  "dialog.categories": "Feedback-Kategorie",
+  "dialog.detail": "Feedback-Details",
+  "dialog.hint": "Details zur Verbesserung hinzufügen; die Einsendung enthält die aktuelle Unterhaltungsaufzeichnung.",
+  "category.task-result": "Aufgabenergebnis",
+  "category.instruction-following": "Verstehen und Befolgen von Anweisungen",
+  "category.product-interaction": "Produktfunktionen und Interaktion",
+  "category.service-stability": "Stabilität und Geschwindigkeit",
+  "category.resource-cost": "Ressourcennutzung und Kosten",
+  "category.security-privacy-permission": "Sicherheit, Datenschutz und Berechtigungen",
+  "category.other": "Sonstiges",
+  "toast.recorded": "Danke für das Feedback",
+  "error.conflict": "Dieses Feedback wurde anderswo geändert; der aktuelle Stand wird angezeigt",
+  "error.load": "Feedback konnte nicht geladen werden",
+  "error.generic": "Feedback konnte nicht gespeichert werden",
+  "error.noteTooLarge": "Die Beschreibung ist zu lang; kürzen und erneut senden"
+}

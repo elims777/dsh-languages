@@ -1,0 +1,10 @@
+{
+  "row.title": "Fähigkeit",
+  "row.running": "Fähigkeit wird geladen",
+  "row.preparing": "Fähigkeit wird zum Laden vorbereitet",
+  "row.failed": "Laden der Fähigkeit fehlgeschlagen",
+  "row.stopped": "Laden der Fähigkeit gestoppt",
+  "row.instructions": "Anweisungen",
+  "row.inspect": "Inspizieren",
+  "menu.userOnly": "nur für Benutzer"
+}

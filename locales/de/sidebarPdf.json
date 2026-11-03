@@ -1,0 +1,17 @@
+{
+  "zoomControls": "Zoom-Steuerung",
+  "zoomMenu": "Zoom auswählen",
+  "zoomOut": "Verkleinern",
+  "zoomIn": "Vergrößern",
+  "zoomFitWidth": "Breite anpassen",
+  "zoomValue": "{percent}%",
+  "title": "PDF",
+  "pageImage": "PDF-Seite {page}",
+  "loading": "Dokument wird gerendert...",
+  "rendering": "Seite wird gerendert…",
+  "failed": "PDF kann nicht angezeigt werden: {message}",
+  "password": "Dieses PDF erfordert ein Passwort; passwortgeschützte Vorschauen werden nicht unterstützt.",
+  "workerFailed": "Der PDF-Renderingprozess konnte nicht fortgesetzt werden. Bitte erneut versuchen.",
+  "unsupported": "Die PDF-Vorschau erfordert den vollständigen Dateiinhalt.",
+  "retry": "Erneut versuchen"
+}

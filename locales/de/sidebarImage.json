@@ -1,0 +1,13 @@
+{
+  "zoomControls": "Zoomsteuerung",
+  "zoomMenu": "Zoom wählen",
+  "zoomOut": "Verkleinern",
+  "zoomIn": "Vergrößern",
+  "zoomFitWidth": "An Breite anpassen",
+  "zoomValue": "{percent}%",
+  "title": "Bild",
+  "preview": "Bildvorschau: {name}",
+  "loading": "Dokument wird gerendert...",
+  "failed": "Dieses Bild konnte nicht angezeigt werden.",
+  "unsupported": "Die Bildvorschau benötigt den vollständigen Dateiinhalt."
+}

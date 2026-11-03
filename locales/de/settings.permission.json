@@ -1,0 +1,14 @@
+{
+  "title": "Berechtigung",
+  "description": "Standard-Berechtigungsmodus für neue Sitzungen",
+  "loading": "Wird geladen",
+  "unavailable": "Nicht verfügbar",
+  "preset.readOnly": "Nur Lesen",
+  "preset.workspaceWrite": "Schreiben im Arbeitsbereich",
+  "preset.fullAccess": "Voller Zugriff",
+  "confirm.title": "Vollen Zugriff aktivieren?",
+  "confirm.description": "Voller Zugriff erlaubt neuen Sitzungen, weniger Bestätigungsschritte und mehr Aktionen direkt auszuführen, einschließlich sensibler Vorgänge, Dateiänderungen und externer Befehle. Nur verwenden, wenn die folgenden Aufgaben vertrauenswürdig sind.",
+  "confirm.acknowledge": "Risiken sind bekannt, fortfahren",
+  "confirm.cancel": "Abbrechen",
+  "confirm.enable": "Vollen Zugriff aktivieren"
+}

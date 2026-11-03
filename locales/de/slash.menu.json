@@ -1,0 +1,11 @@
+{
+  "command": "Befehle",
+  "skill": "Fähigkeiten",
+  "subagent": "Subagenten",
+  "loading": "Wird geladen…",
+  "drill.aria": "Ordner durchsuchen",
+  "drill.hint": "Ordner durchsuchen",
+  "drill.key": "Tab",
+  "crumbs.aria": "Ordner-Navigation",
+  "suggestions.aria": "Vorschläge auslösen"
+}

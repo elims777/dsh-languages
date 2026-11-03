@@ -1,0 +1,19 @@
+{
+  "chip.label": "Plan",
+  "preview.title": "Plan",
+  "preview.document": "Plan · Markdown",
+  "preview.action": "Öffnen",
+  "preview.open": "Plan in der Seitenleiste öffnen",
+  "preview.full": "Vollständigen Plan anzeigen",
+  "preview.openNamed": "Plan öffnen: {title}",
+  "preview.loading": "Plan wird geladen…",
+  "preview.failed": "Plan konnte nicht geladen werden",
+  "preview.invalidAddress": "Ungültige Plan-Adresse",
+  "preview.historyUnavailable": "Sitzungsverlauf ist nicht verfügbar",
+  "preview.notFound": "Dieser Plan wurde nicht gefunden",
+  "preview.unavailable": "Planvorschau ist nicht verfügbar",
+  "preview.expired": "Diese temporäre Planvorschau ist abgelaufen. Über die Karte der ausstehenden Prüfung erneut öffnen.",
+  "chip.on.aria": "Planmodus an, zum Ausschalten drücken",
+  "chip.on.title": "Planmodus an — zum Ausschalten klicken (/plan off)",
+  "chip.exitFailed": "Planmodus konnte nicht verlassen werden"
+}

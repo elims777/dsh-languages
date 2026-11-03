@@ -1,0 +1,16 @@
+{
+  "title": "Shell",
+  "description": "Begrenzt Laufzeit und Ausgabemenge jedes Befehls.",
+  "timeoutMs": "Befehls-Timeout (ms)",
+  "timeoutMsHint": "Laufzeit eines Befehls bis zur Beendigung.",
+  "maxOutputBytes": "Ausgabegrenze pro Stream (Bytes)",
+  "maxOutputBytesHint": "Ausgaben darüber hinaus gehen in eine temporäre Datei und gehen nicht verloren.",
+  "overridden": "Überschrieben",
+  "reset": "Auf Standard zurücksetzen",
+  "readOnly": "Diese Bereitstellung speichert Einstellungen schreibgeschützt.",
+  "unavailable": "Dieses Plugin ist nicht geladen und kann derzeit nicht konfiguriert werden.",
+  "save": "Speichern",
+  "saving": "Wird gespeichert…",
+  "saveFailed": "Die Bereitstellung hat diese Werte nicht übernommen; sie bleiben zur Korrektur erhalten.",
+  "invalidNumber": "Eine Zahl eingeben oder das Feld leer lassen, um den Standard zu verwenden."
+}

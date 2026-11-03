@@ -1,0 +1,17 @@
+{
+  "section.files": "Dateien und Ordner",
+  "section.subagents": "Subagenten",
+  "section.sessions": "Sitzungen",
+  "candidate.noCwd": "(kein cwd)",
+  "crumb.root": "Arbeitsbereich",
+  "fileOpen.title": "Datei konnte nicht geöffnet werden",
+  "fileOpen.failed": "„{path}“ konnte nicht geöffnet werden. Erneut versuchen oder diese Meldung schließen.",
+  "fileOpen.close": "Schließen",
+  "fileOpen.retry": "Wiederholen",
+  "time.now": "jetzt",
+  "time.minutes": "{n} Min.",
+  "time.hours": "{n} Std.",
+  "time.days": "{n} Tg.",
+  "time.months": "{n} Mon.",
+  "time.years": "{n} J."
+}

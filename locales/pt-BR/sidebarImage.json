@@ -1,0 +1,13 @@
+{
+  "zoomControls": "Controles de zoom",
+  "zoomMenu": "Escolher zoom",
+  "zoomOut": "Reduzir zoom",
+  "zoomIn": "Aumentar zoom",
+  "zoomFitWidth": "Ajustar à largura",
+  "zoomValue": "{percent}%",
+  "title": "Imagem",
+  "preview": "Prévia da imagem: {name}",
+  "loading": "Renderizando documento...",
+  "failed": "Não foi possível exibir esta imagem.",
+  "unsupported": "A prévia de imagem requer o conteúdo completo do arquivo."
+}

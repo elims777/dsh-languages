@@ -1,0 +1,14 @@
+{
+  "title": "Agent-Schleife",
+  "description": "Steuert, wie der Agent Werkzeugaufrufe verteilt.",
+  "maxParallel": "Parallele Werkzeugaufrufe",
+  "maxParallelHint": "Obergrenze für parallel sichere Aufrufe, die gleichzeitig in einem Schritt laufen.",
+  "overridden": "Überschrieben",
+  "reset": "Auf Standard zurücksetzen",
+  "readOnly": "Diese Bereitstellung speichert Einstellungen schreibgeschützt.",
+  "unavailable": "Dieses Plugin ist nicht geladen und kann daher derzeit nicht konfiguriert werden.",
+  "save": "Speichern",
+  "saving": "Speichern…",
+  "saveFailed": "Die Bereitstellung hat diese Werte nicht übernommen; sie bleiben zur Korrektur erhalten.",
+  "invalidNumber": "Eine Zahl eingeben oder für den Standard leer lassen."
+}
