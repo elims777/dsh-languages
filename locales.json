@@ -1,7 +1,6 @@
 {
   "languages": [
     { "id": "ru", "label": "Русский" },
-    { "id": "uk", "label": "Українська" },
     { "id": "es", "label": "Español" },
     { "id": "pt-BR", "label": "Português (Brasil)" },
     { "id": "de", "label": "Deutsch" },
