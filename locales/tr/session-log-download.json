@@ -1,0 +1,12 @@
+{
+  "header.more": "Diğer işlemler",
+  "menu.download": "Oturum günlüğünü indir",
+  "menu.feedback": "Geri bildirim",
+  "dialog.preparingTitle": "Oturum dışa aktarılıyor",
+  "dialog.preparingDescription": "Bu oturumu, alt oturumlarını ve eklerini içeren bir ZIP hazırlanıyor.",
+  "dialog.successTitle": "Oturum indirme başladı",
+  "dialog.successDescription": "Tarayıcı oturum ZIP'ini indiriyor.",
+  "dialog.errorTitle": "Oturum dışa aktarma başarısız oldu",
+  "dialog.close": "Kapat",
+  "dialog.commandFailed": "Oturum dışa aktarma başlatılamadı."
+}

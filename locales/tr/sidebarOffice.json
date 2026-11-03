@@ -1,0 +1,17 @@
+{
+  "title": "Office belgesi",
+  "loading": "Belge işleniyor...",
+  "retry": "Yeniden dene",
+  "viewMissingFonts": "Eksik yazı tipleri: {count}. Görüntülemek için tıklayın.",
+  "missingFontsTitle": "Eksik yazı tipleri",
+  "missingFontsDescription": "Bu yazı tipleri bu önizlemede kullanılamıyor. Metin ve düzen orijinal belgeden farklı olabilir.",
+  "missingFontsCount": "Yazı tipleri: {count}",
+  "closeDetails": "Yazı tipi ayrıntılarını kapat",
+  "unavailable": "Office önizlemeleri kullanılamıyor. DeepSeek Harness çalıştıran bilgisayarda belge önizleme hizmetini etkinleştirin.",
+  "invalid": "Bu Office dosyası önizlenemiyor. Bozuk, parola korumalı olabilir veya uzantısı yanlış olabilir.",
+  "tooLarge": "Office dosyası veya dönüştürülen PDF, önizleme boyut sınırını aşıyor. Dosya boyutunu azaltın veya önizleme yapılandırmasını ayarlayın.",
+  "failed": "Office dönüştürme kullanılabilir bir PDF üretmedi. Dosyayı denetleyip yeniden deneyin.",
+  "timeout": "Office dönüştürme zaman aşımına uğradı. Yeniden deneyin.",
+  "busy": "Office önizlemesi meşgul. Kısa süre sonra yeniden deneyin.",
+  "changed": "Dosya okunurken değişti. Önizlemeyi yeniden açın."
+}

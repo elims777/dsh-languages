@@ -1,0 +1,7 @@
+{
+  "waiting": "Onay bekleniyor",
+  "detail.aria": "Onay ayrıntıları",
+  "escalation": "{toolName} aracı ayrıcalıklı çalıştırma talep ediyor",
+  "reject": "Reddet",
+  "allowOnce": "Bir kez izin ver"
+}

@@ -1,0 +1,19 @@
+{
+  "shortcut.noSession": "Önce bir oturum seçin",
+  "type.label": "Dosyalar",
+  "guide.title": "Çalışma alanı dosyaları",
+  "guide.description": "Bu oturumun çalışma alanındaki dosyalara göz atın",
+  "loading": "Okunuyor…",
+  "empty": "Boş dizin",
+  "truncated": "Çok fazla öğe var, yalnızca bir kısmı gösteriliyor.",
+  "noWorkspace": "Bu oturumun çalışma alanı dizini yok.",
+  "reload": "Yeniden yükle",
+  "autoRefresh": "Otomatik yenile",
+  "autoRefresh.enable": "Otomatik yenilemeyi aç",
+  "autoRefresh.disable": "Otomatik yenilemeyi kapat",
+  "entry.other": "Dosya veya dizin olmadığı için açılamaz.",
+  "error.notFound": "Bu dizin artık yok. Taşınmış veya silinmiş olabilir.",
+  "error.outsideWorkspace": "Bu dizin çalışma alanının dışında olduğu için kenar çubuğu onu okumaz.",
+  "error.notDirectory": "Bu bir dizin değil.",
+  "error.unavailable": "Okuma başarısız: {message}"
+}

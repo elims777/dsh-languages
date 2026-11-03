@@ -1,0 +1,19 @@
+{
+  "chip.label": "Plan",
+  "preview.title": "Plan",
+  "preview.document": "Plan · Markdown",
+  "preview.action": "Aç",
+  "preview.open": "Planı kenar çubuğunda aç",
+  "preview.full": "Tam planı görüntüle",
+  "preview.openNamed": "Planı aç: {title}",
+  "preview.loading": "Plan yükleniyor…",
+  "preview.failed": "Plan yüklenemedi",
+  "preview.invalidAddress": "Geçersiz plan adresi",
+  "preview.historyUnavailable": "Oturum geçmişi kullanılamıyor",
+  "preview.notFound": "Bu plan bulunamadı",
+  "preview.unavailable": "Plan önizlemesi kullanılamıyor",
+  "preview.expired": "Bu geçici plan önizlemesinin süresi doldu. Bekleyen inceleme kartından yeniden açın.",
+  "chip.on.aria": "Plan modu açık, kapatmak için basın",
+  "chip.on.title": "Plan modu açık — kapatmak için tıklayın (/plan off)",
+  "chip.exitFailed": "Plan modundan çıkılamadı"
+}

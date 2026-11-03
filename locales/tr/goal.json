@@ -1,0 +1,14 @@
+{
+  "phase.active": "Sürmekte olan hedef",
+  "phase.active.disarmed": "Etkin olmayan hedef",
+  "phase.paused": "Duraklatılmış hedef",
+  "phase.blocked": "Engellenmiş hedef",
+  "objective.aria": "Hedef amacı",
+  "commandInput.aria": "Komut girişi",
+  "action.save": "Hedefi kaydet",
+  "action.cancel": "Düzenlemeyi iptal et",
+  "action.pause": "Hedefi duraklat",
+  "action.resume": "Hedefi sürdür",
+  "action.edit": "Hedefi düzenle",
+  "action.clear": "Hedefi temizle"
+}
