@@ -1,0 +1,17 @@
+{
+  "section.files": "Berkas & folder",
+  "section.subagents": "Subagen",
+  "section.sessions": "Sesi",
+  "candidate.noCwd": "(tanpa cwd)",
+  "crumb.root": "Ruang kerja",
+  "fileOpen.title": "Tidak dapat membuka berkas",
+  "fileOpen.failed": "Tidak dapat membuka “{path}”. Coba lagi atau tutup pesan ini.",
+  "fileOpen.close": "Tutup",
+  "fileOpen.retry": "Coba lagi",
+  "time.now": "sekarang",
+  "time.minutes": "{n}mnt",
+  "time.hours": "{n}j",
+  "time.days": "{n}hr",
+  "time.months": "{n}bln",
+  "time.years": "{n}thn"
+}

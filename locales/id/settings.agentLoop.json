@@ -1,0 +1,14 @@
+{
+  "title": "Loop agen",
+  "description": "Atur cara agen mengirim panggilan alat.",
+  "maxParallel": "Panggilan alat paralel",
+  "maxParallelHint": "Batas atas panggilan aman-paralel yang berjalan bersamaan dalam satu langkah.",
+  "overridden": "Ditimpa",
+  "reset": "Setel ulang ke default",
+  "readOnly": "Deployment ini menyimpan pengaturan sebagai hanya-baca.",
+  "unavailable": "Plugin ini tidak dimuat, jadi belum dapat dikonfigurasi sekarang.",
+  "save": "Simpan",
+  "saving": "Menyimpan…",
+  "saveFailed": "Deployment tidak menerima nilai ini; nilai dibiarkan untuk Anda perbaiki.",
+  "invalidNumber": "Masukkan angka, atau biarkan kosong untuk memakai default."
+}
