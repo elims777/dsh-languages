@@ -1,0 +1,14 @@
+{
+  "title": "Boucle de l’agent",
+  "description": "Contrôler la manière dont l’agent distribue les appels d’outils.",
+  "maxParallel": "Appels d’outils en parallèle",
+  "maxParallelHint": "Nombre maximal d’appels sûrs en parallèle exécutés simultanément dans une même étape.",
+  "overridden": "Remplacé",
+  "reset": "Rétablir la valeur par défaut",
+  "readOnly": "Ce déploiement stocke les paramètres en lecture seule.",
+  "unavailable": "Ce plugin n’est pas chargé : il ne peut pas être configuré pour l’instant.",
+  "save": "Enregistrer",
+  "saving": "Enregistrement…",
+  "saveFailed": "Le déploiement n’a pas accepté ces valeurs ; elles ont été laissées pour correction.",
+  "invalidNumber": "Saisir un nombre ou laisser vide pour utiliser la valeur par défaut."
+}

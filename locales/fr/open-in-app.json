@@ -41,7 +41,7 @@
   "path.openError": "Impossible d’ouvrir. Réessayer.",
   "path.revealError": "Impossible d’afficher l’emplacement du fichier. Réessayer.",
   "app.finder": "Finder",
-  "app.explorer": "Explorateur de fichiers",
-  "app.filemanager": "Fichiers",
+  "app.explorer": "File Explorer",
+  "app.filemanager": "Files",
   "app.terminal": "Terminal"
 }

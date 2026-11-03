@@ -1,0 +1,17 @@
+{
+  "title": "Feuille de calcul",
+  "language": "en",
+  "loading": "Rendu du document...",
+  "invalid": "Cette feuille de calcul n’a pas pu être ouverte. Vérifier son format, son contenu ou sa protection par mot de passe.",
+  "tooLarge": "Ce classeur dépasse la limite de taille de l’aperçu.",
+  "timeout": "L’ouverture de ce classeur a expiré. Essayer un fichier plus petit.",
+  "encoding": "Cet encodage de texte n’a pas pu être lu. Enregistrer le fichier en UTF-8 ou UTF-16 avec BOM et réessayer.",
+  "formulaWarning": "Ce classeur contient des formules. Les résultats affichés peuvent être absents ou inexacts.",
+  "unsupportedNotice": "Cet aperçu ne prend pas en charge {features} dans ce classeur. Ouvrir le classeur dans une application système pour l’expérience complète.",
+  "charts": "graphiques",
+  "images": "images",
+  "shapes": "formes",
+  "conditionalFormatting": "mise en forme conditionnelle",
+  "featureSeparator": ", ",
+  "retry": "Réessayer"
+}

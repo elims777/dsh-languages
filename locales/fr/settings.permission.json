@@ -1,0 +1,14 @@
+{
+  "title": "Autorisation",
+  "description": "Choisir le mode d’autorisation par défaut pour les nouvelles sessions",
+  "loading": "Chargement",
+  "unavailable": "Indisponible",
+  "preset.readOnly": "Lecture seule",
+  "preset.workspaceWrite": "Écriture dans l’espace de travail",
+  "preset.fullAccess": "Accès complet",
+  "confirm.title": "Activer l’accès complet ?",
+  "confirm.description": "L’accès complet permet aux nouvelles sessions de réduire les étapes de confirmation et d’effectuer plus d’actions directement, y compris des opérations sensibles, des modifications de fichiers ou des commandes externes. À n’utiliser que si les tâches suivantes sont dignes de confiance.",
+  "confirm.acknowledge": "Je comprends les risques et souhaite continuer",
+  "confirm.cancel": "Annuler",
+  "confirm.enable": "Activer l’accès complet"
+}

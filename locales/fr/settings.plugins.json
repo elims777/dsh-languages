@@ -1,0 +1,7 @@
+{
+  "nav": "Plugins intégrés",
+  "title": "Plugins intégrés",
+  "intro": "Inspecter les plugins fournis par cette installation.",
+  "tabs": "Vues des plugins",
+  "empty": "Cette installation n'expose aucune vue de plugins."
+}

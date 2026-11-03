@@ -1,0 +1,7 @@
+{
+  "waiting": "En attente de confirmation",
+  "detail.aria": "Détails de la confirmation",
+  "escalation": "L’outil {toolName} demande une exécution privilégiée",
+  "reject": "Refuser",
+  "allowOnce": "Autoriser une fois"
+}
