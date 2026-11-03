@@ -1,0 +1,14 @@
+{
+  "title": "Izin",
+  "description": "Pilih mode izin bawaan untuk sesi baru",
+  "loading": "Memuat",
+  "unavailable": "Tidak tersedia",
+  "preset.readOnly": "Hanya Baca",
+  "preset.workspaceWrite": "Tulis Ruang Kerja",
+  "preset.fullAccess": "Akses penuh",
+  "confirm.title": "Aktifkan Akses penuh?",
+  "confirm.description": "Akses penuh membuat sesi baru mengurangi langkah konfirmasi dan melakukan lebih banyak tindakan secara langsung, termasuk operasi sensitif, perubahan file, atau perintah eksternal. Gunakan hanya jika Anda memercayai tugas berikutnya.",
+  "confirm.acknowledge": "Saya memahami risikonya dan ingin melanjutkan",
+  "confirm.cancel": "Batal",
+  "confirm.enable": "Aktifkan Akses penuh"
+}

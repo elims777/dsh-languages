@@ -1,0 +1,17 @@
+{
+  "zoomControls": "Kontrol zoom",
+  "zoomMenu": "Pilih zoom",
+  "zoomOut": "Perkecil",
+  "zoomIn": "Perbesar",
+  "zoomFitWidth": "Sesuaikan lebar",
+  "zoomValue": "{percent}%",
+  "title": "PDF",
+  "pageImage": "Halaman PDF {page}",
+  "loading": "Merender dokumen...",
+  "rendering": "Merender halaman…",
+  "failed": "Tidak dapat menampilkan PDF: {message}",
+  "password": "PDF ini memerlukan kata sandi; pratinjau yang dilindungi kata sandi tidak didukung.",
+  "workerFailed": "Proses perenderan PDF tidak dapat dilanjutkan. Coba lagi.",
+  "unsupported": "Pratinjau PDF memerlukan isi berkas lengkap.",
+  "retry": "Coba lagi"
+}

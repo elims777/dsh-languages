@@ -1,0 +1,19 @@
+{
+  "mode": "Mode akses, saat ini: {name}",
+  "close": "Tutup",
+  "preset.readOnly": "Hanya Baca",
+  "preset.workspaceWrite": "Tulis Ruang Kerja",
+  "preset.fullAccess": "Akses penuh",
+  "confirm.title": "Aktifkan Akses penuh?",
+  "confirm.description": "Akses penuh mengurangi langkah konfirmasi dan memungkinkan agen melakukan lebih banyak tindakan langsung, termasuk operasi sensitif, perubahan file, atau perintah eksternal. Gunakan hanya bila Anda memercayai tugas saat ini.",
+  "confirm.acknowledge": "Saya memahami risikonya dan ingin melanjutkan",
+  "confirm.cancel": "Batal",
+  "confirm.enable": "Aktifkan Akses penuh",
+  "auto.label": "Tinjauan otomatis",
+  "auto.badge": "EXP",
+  "auto.description": "Berjalan tanpa sandbox setelah tinjauan eksperimental model yang sama atas setiap panggilan alat native dan panggilan internal PTC.",
+  "auto.confirm.title": "Aktifkan Tinjauan otomatis (eksperimental)?",
+  "auto.confirm.description": "Tinjauan otomatis berjalan tanpa sandbox. Sebelum setiap panggilan alat native dan panggilan internal PTC, model yang sama dengan agen saat ini meninjau apakah akan mengizinkannya; Anda menyetujui atau menolak setiap panggilan yang ditolaknya. Fitur ini eksperimental, dapat keliru mengizinkan atau menolak tindakan, dan memakai token tambahan.",
+  "auto.confirm.acknowledge": "Saya memahami risiko ini dan ingin melanjutkan",
+  "auto.confirm.enable": "Aktifkan Tinjauan otomatis"
+}

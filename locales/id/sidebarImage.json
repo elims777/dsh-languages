@@ -1,0 +1,13 @@
+{
+  "zoomControls": "Kontrol perbesaran",
+  "zoomMenu": "Pilih perbesaran",
+  "zoomOut": "Perkecil",
+  "zoomIn": "Perbesar",
+  "zoomFitWidth": "Sesuaikan lebar",
+  "zoomValue": "{percent}%",
+  "title": "Gambar",
+  "preview": "Pratinjau gambar: {name}",
+  "loading": "Merender dokumen...",
+  "failed": "Gambar ini tidak dapat ditampilkan.",
+  "unsupported": "Pratinjau gambar memerlukan isi file yang lengkap."
+}

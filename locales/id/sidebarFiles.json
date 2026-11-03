@@ -1,0 +1,19 @@
+{
+  "shortcut.noSession": "Pilih sesi dulu",
+  "type.label": "File",
+  "guide.title": "File ruang kerja",
+  "guide.description": "Jelajahi file di ruang kerja sesi ini",
+  "loading": "Membaca…",
+  "empty": "Direktori kosong",
+  "truncated": "Terlalu banyak entri, hanya sebagian yang ditampilkan.",
+  "noWorkspace": "Sesi ini tidak memiliki direktori ruang kerja.",
+  "reload": "Muat ulang",
+  "autoRefresh": "Segarkan otomatis",
+  "autoRefresh.enable": "Aktifkan segarkan otomatis",
+  "autoRefresh.disable": "Nonaktifkan segarkan otomatis",
+  "entry.other": "Bukan file atau direktori, jadi tidak dapat dibuka.",
+  "error.notFound": "Direktori itu sudah tidak ada. Mungkin telah dipindahkan atau dihapus.",
+  "error.outsideWorkspace": "Direktori itu di luar ruang kerja, jadi bilah samping tidak akan membacanya.",
+  "error.notDirectory": "Itu bukan direktori.",
+  "error.unavailable": "Gagal membaca: {message}"
+}

@@ -1,0 +1,10 @@
+{
+  "row.title": "Keahlian",
+  "row.running": "Memuat keahlian",
+  "row.preparing": "Menyiapkan pemuatan keahlian",
+  "row.failed": "Gagal memuat keahlian",
+  "row.stopped": "Pemuatan keahlian dihentikan",
+  "row.instructions": "Instruksi",
+  "row.inspect": "Periksa",
+  "menu.userOnly": "hanya-pengguna"
+}

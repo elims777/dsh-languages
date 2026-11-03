@@ -1,0 +1,17 @@
+{
+  "title": "Lembar sebar",
+  "language": "en",
+  "loading": "Merender dokumen...",
+  "invalid": "Lembar sebar ini tidak dapat dibuka. Periksa format, isi, atau perlindungan kata sandi.",
+  "tooLarge": "Buku kerja ini melebihi batas ukuran pratinjau.",
+  "timeout": "Waktu membuka buku kerja ini habis. Coba file yang lebih kecil.",
+  "encoding": "Pengodean teks ini tidak dapat dibaca. Simpan file sebagai UTF-8 atau UTF-16 dengan BOM lalu coba lagi.",
+  "formulaWarning": "Buku kerja ini berisi rumus. Hasil yang ditampilkan mungkin tidak ada atau tidak akurat.",
+  "unsupportedNotice": "Pratinjau ini tidak mendukung {features} dalam buku kerja ini. Buka di aplikasi sistem untuk pengalaman lengkap.",
+  "charts": "grafik",
+  "images": "gambar",
+  "shapes": "bentuk",
+  "conditionalFormatting": "pemformatan bersyarat",
+  "featureSeparator": ", ",
+  "retry": "Coba lagi"
+}

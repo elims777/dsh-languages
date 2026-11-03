@@ -1,0 +1,11 @@
+{
+  "command": "Perintah",
+  "skill": "Keahlian",
+  "subagent": "Subagen",
+  "loading": "Memuat…",
+  "drill.aria": "Jelajahi folder",
+  "drill.hint": "Jelajahi folder",
+  "drill.key": "Tab",
+  "crumbs.aria": "Navigasi folder",
+  "suggestions.aria": "Saran pemicu"
+}

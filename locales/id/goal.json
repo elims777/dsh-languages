@@ -1,0 +1,14 @@
+{
+  "phase.active": "Tujuan Berlangsung",
+  "phase.active.disarmed": "Tujuan Tidak Aktif",
+  "phase.paused": "Tujuan Dijeda",
+  "phase.blocked": "Tujuan Diblokir",
+  "objective.aria": "Sasaran tujuan",
+  "commandInput.aria": "Masukan perintah",
+  "action.save": "Simpan tujuan",
+  "action.cancel": "Batalkan pengeditan",
+  "action.pause": "Jeda tujuan",
+  "action.resume": "Lanjutkan tujuan",
+  "action.edit": "Edit tujuan",
+  "action.clear": "Hapus tujuan"
+}

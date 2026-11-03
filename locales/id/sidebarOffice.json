@@ -1,0 +1,17 @@
+{
+  "title": "Dokumen Office",
+  "loading": "Merender dokumen...",
+  "retry": "Coba lagi",
+  "viewMissingFonts": "Font tidak tersedia: {count}. Klik untuk melihat.",
+  "missingFontsTitle": "Font tidak tersedia",
+  "missingFontsDescription": "Font ini tidak tersedia untuk pratinjau. Teks dan tata letak dapat berbeda dari dokumen asli.",
+  "missingFontsCount": "Font: {count}",
+  "closeDetails": "Tutup detail font",
+  "unavailable": "Pratinjau Office tidak tersedia. Aktifkan layanan pratinjau dokumen di komputer yang menjalankan DeepSeek Harness.",
+  "invalid": "File Office ini tidak dapat dipratinjau. Mungkin rusak, dilindungi kata sandi, atau ekstensinya salah.",
+  "tooLarge": "File Office atau PDF hasil konversi melebihi batas ukuran pratinjau. Kurangi ukuran file atau sesuaikan konfigurasi pratinjau.",
+  "failed": "Konversi Office tidak menghasilkan PDF yang dapat digunakan. Periksa file dan coba lagi.",
+  "timeout": "Konversi Office kehabisan waktu. Coba lagi.",
+  "busy": "Pratinjau Office sedang sibuk. Coba lagi sebentar lagi.",
+  "changed": "File berubah saat dibaca. Buka ulang pratinjau."
+}

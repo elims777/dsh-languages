@@ -1,0 +1,19 @@
+{
+  "chip.label": "Rencana",
+  "preview.title": "Rencana",
+  "preview.document": "Rencana · Markdown",
+  "preview.action": "Buka",
+  "preview.open": "Buka rencana di bilah samping",
+  "preview.full": "Lihat rencana lengkap",
+  "preview.openNamed": "Buka rencana: {title}",
+  "preview.loading": "Memuat rencana…",
+  "preview.failed": "Tidak dapat memuat rencana",
+  "preview.invalidAddress": "Alamat rencana tidak valid",
+  "preview.historyUnavailable": "Riwayat sesi tidak tersedia",
+  "preview.notFound": "Rencana ini tidak ditemukan",
+  "preview.unavailable": "Pratinjau rencana tidak tersedia",
+  "preview.expired": "Pratinjau rencana sementara ini sudah kedaluwarsa. Buka lagi dari kartu tinjauan tertunda.",
+  "chip.on.aria": "Mode rencana aktif, tekan untuk mematikan",
+  "chip.on.title": "Mode rencana aktif — klik untuk mematikan (/plan off)",
+  "chip.exitFailed": "Gagal keluar dari mode rencana"
+}

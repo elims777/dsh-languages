@@ -1,0 +1,16 @@
+{
+  "title": "Shell",
+  "description": "Batasi berapa lama setiap perintah berjalan dan seberapa banyak outputnya.",
+  "timeoutMs": "Batas waktu perintah (ms)",
+  "timeoutMsHint": "Berapa lama satu perintah berjalan sebelum dihentikan.",
+  "maxOutputBytes": "Batas output per aliran (byte)",
+  "maxOutputBytesHint": "Output di atas batas ini dialihkan ke file sementara, bukan dibuang.",
+  "overridden": "Ditimpa",
+  "reset": "Atur ulang ke default",
+  "readOnly": "Penerapan ini menyimpan pengaturan secara hanya-baca.",
+  "unavailable": "Plugin ini tidak dimuat, jadi tidak dapat dikonfigurasi saat ini.",
+  "save": "Simpan",
+  "saving": "Menyimpan…",
+  "saveFailed": "Penerapan tidak menerima nilai ini; nilai dibiarkan agar Anda perbaiki.",
+  "invalidNumber": "Masukkan angka, atau biarkan kosong untuk memakai default."
+}
