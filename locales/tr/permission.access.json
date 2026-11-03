@@ -1,0 +1,19 @@
+{
+  "mode": "Erişim modu, geçerli: {name}",
+  "close": "Kapat",
+  "preset.readOnly": "Salt Okunur",
+  "preset.workspaceWrite": "Çalışma Alanına Yazma",
+  "preset.fullAccess": "Tam erişim",
+  "confirm.title": "Tam erişim etkinleştirilsin mi?",
+  "confirm.description": "Tam erişim, onay adımlarını azaltır ve temsilcinin hassas işlemler, dosya değişiklikleri veya harici komutlar dahil daha fazla eylemi doğrudan gerçekleştirmesini sağlar. Yalnızca geçerli göreve güvendiğinizde kullanın.",
+  "confirm.acknowledge": "Riskleri anlıyorum ve devam etmek istiyorum",
+  "confirm.cancel": "İptal",
+  "confirm.enable": "Tam erişimi etkinleştir",
+  "auto.label": "Otomatik inceleme",
+  "auto.badge": "EXP",
+  "auto.description": "Her yerel araç çağrısı ve PTC iç çağrısı deneysel olarak aynı modelle incelendikten sonra korumalı alan olmadan çalıştır.",
+  "auto.confirm.title": "Otomatik inceleme etkinleştirilsin mi (deneysel)?",
+  "auto.confirm.description": "Otomatik inceleme korumalı alan olmadan çalışır. Her yerel araç çağrısı ve PTC iç çağrısından önce, geçerli temsilciyle aynı model bunlara izin verilip verilmeyeceğini inceler; reddettiği her çağrıyı siz onaylar veya reddedersiniz. Bu özellik deneyseldir, eylemleri yanlışlıkla kabul edebilir veya reddedebilir ve ek token kullanır.",
+  "auto.confirm.acknowledge": "Bu riskleri anlıyorum ve devam etmek istiyorum",
+  "auto.confirm.enable": "Otomatik incelemeyi etkinleştir"
+}

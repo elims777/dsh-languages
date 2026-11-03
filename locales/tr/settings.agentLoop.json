@@ -1,0 +1,14 @@
+{
+  "title": "Temsilci döngüsü",
+  "description": "Temsilcinin araç çağrılarını nasıl dağıttığını denetleyin.",
+  "maxParallel": "Paralel araç çağrıları",
+  "maxParallelHint": "Bir adım içinde aynı anda çalışan paralel güvenli çağrıların üst sınırı.",
+  "overridden": "Geçersiz kılındı",
+  "reset": "Varsayılana sıfırla",
+  "readOnly": "Bu dağıtım ayarları salt okunur olarak saklar.",
+  "unavailable": "Bu eklenti yüklü değil, bu nedenle şu anda yapılandırılamaz.",
+  "save": "Kaydet",
+  "saving": "Kaydediliyor…",
+  "saveFailed": "Dağıtım bu değerleri kabul etmedi; düzeltmeniz için bırakıldılar.",
+  "invalidNumber": "Bir sayı girin veya varsayılanı kullanmak için boş bırakın."
+}

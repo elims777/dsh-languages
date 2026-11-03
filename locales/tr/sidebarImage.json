@@ -1,0 +1,13 @@
+{
+  "zoomControls": "Yakınlaştırma denetimleri",
+  "zoomMenu": "Yakınlaştırma seç",
+  "zoomOut": "Uzaklaştır",
+  "zoomIn": "Yakınlaştır",
+  "zoomFitWidth": "Genişliğe sığdır",
+  "zoomValue": "{percent}%",
+  "title": "Görsel",
+  "preview": "Görsel önizlemesi: {name}",
+  "loading": "Belge işleniyor...",
+  "failed": "Bu görsel görüntülenemedi.",
+  "unsupported": "Görsel önizlemesi dosyanın tam içeriğini gerektirir."
+}

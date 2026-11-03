@@ -1,0 +1,16 @@
+{
+  "title": "Shell",
+  "description": "Her komutun ne kadar süre çalışabileceğini ve ne kadar çıktı üretebileceğini sınırla.",
+  "timeoutMs": "Komut zaman aşımı (ms)",
+  "timeoutMsHint": "Bir komutun sonlandırılmadan önce ne kadar süre çalışabileceği.",
+  "maxOutputBytes": "Akış başına çıktı sınırı (bayt)",
+  "maxOutputBytesHint": "Bu sınırın ötesindeki çıktı kaybolmak yerine geçici bir dosyaya taşar.",
+  "overridden": "Geçersiz kılındı",
+  "reset": "Varsayılana sıfırla",
+  "readOnly": "Bu dağıtım ayarları salt okunur olarak saklar.",
+  "unavailable": "Bu eklenti yüklenmemiş, bu yüzden şu anda yapılandırılamıyor.",
+  "save": "Kaydet",
+  "saving": "Kaydediliyor…",
+  "saveFailed": "Dağıtım bu değerleri kabul etmedi; düzeltmeniz için bırakıldı.",
+  "invalidNumber": "Bir sayı girin veya varsayılanı kullanmak için boş bırakın."
+}

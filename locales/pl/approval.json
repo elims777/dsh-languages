@@ -2,6 +2,6 @@
   "waiting": "Oczekiwanie na potwierdzenie",
   "detail.aria": "Szczegóły potwierdzenia",
   "escalation": "Narzędzie {toolName} żąda wykonania z podwyższonymi uprawnieniami",
-  "reject": "Odrzuć",
-  "allowOnce": "Zezwól raz"
+  "reject": "Odrzucić",
+  "allowOnce": "Zezwolić raz"
 }

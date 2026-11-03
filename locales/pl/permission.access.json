@@ -5,7 +5,7 @@
   "preset.workspaceWrite": "Zapis w obszarze roboczym",
   "preset.fullAccess": "Pełny dostęp",
   "confirm.title": "Włączyć pełny dostęp?",
-  "confirm.description": "Pełny dostęp ogranicza liczbę potwierdzeń i pozwala agentowi wykonywać więcej działań bezpośrednio, w tym operacje wrażliwe, zmiany plików i polecenia zewnętrzne. Używać go tylko wtedy, gdy bieżące zadanie jest zaufane.",
+  "confirm.description": "Pełny dostęp ogranicza liczbę potwierdzeń i pozwala agentowi wykonywać więcej działań bezpośrednio, w tym operacje wrażliwe, zmiany plików i polecenia zewnętrzne. Używać go tylko wtedy, gdy bieżącemu zadaniu można zaufać.",
   "confirm.acknowledge": "Rozumiem ryzyko i chcę kontynuować",
   "confirm.cancel": "Anulować",
   "confirm.enable": "Włączyć pełny dostęp",

@@ -1,0 +1,17 @@
+{
+  "title": "Elektronik tablo",
+  "language": "en",
+  "loading": "Belge işleniyor...",
+  "invalid": "Bu elektronik tablo açılamadı. Biçimini, içeriğini veya parola korumasını kontrol edin.",
+  "tooLarge": "Bu çalışma kitabı önizleme boyut sınırını aşıyor.",
+  "timeout": "Bu çalışma kitabının açılması zaman aşımına uğradı. Daha küçük bir dosya deneyin.",
+  "encoding": "Bu metin kodlaması okunamadı. Dosyayı BOM içeren UTF-8 veya UTF-16 olarak kaydedip yeniden deneyin.",
+  "formulaWarning": "Bu çalışma kitabı formüller içeriyor. Gösterilen sonuçlar eksik veya yanlış olabilir.",
+  "unsupportedNotice": "Bu önizleme bu çalışma kitabındaki {features} öğelerini desteklemiyor. Tam deneyim için sistem uygulamasında açın.",
+  "charts": "grafikler",
+  "images": "görseller",
+  "shapes": "şekiller",
+  "conditionalFormatting": "koşullu biçimlendirme",
+  "featureSeparator": ", ",
+  "retry": "Yeniden dene"
+}

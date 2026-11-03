@@ -1,0 +1,17 @@
+{
+  "zoomControls": "Yakınlaştırma kontrolleri",
+  "zoomMenu": "Yakınlaştırma seç",
+  "zoomOut": "Uzaklaştır",
+  "zoomIn": "Yakınlaştır",
+  "zoomFitWidth": "Genişliğe sığdır",
+  "zoomValue": "{percent}%",
+  "title": "PDF",
+  "pageImage": "PDF sayfası {page}",
+  "loading": "Belge işleniyor...",
+  "rendering": "Sayfa işleniyor…",
+  "failed": "PDF görüntülenemiyor: {message}",
+  "password": "Bu PDF parola gerektiriyor; parola korumalı önizlemeler desteklenmiyor.",
+  "workerFailed": "PDF işleme süreci devam edemedi. Lütfen yeniden deneyin.",
+  "unsupported": "PDF önizlemesi dosyanın tam içeriğini gerektirir.",
+  "retry": "Yeniden dene"
+}

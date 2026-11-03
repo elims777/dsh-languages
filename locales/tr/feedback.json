@@ -1,0 +1,22 @@
+{
+  "action.like": "İyi yanıt",
+  "action.likeActive": "Değerlendirmeyi kaldır",
+  "action.dislike": "Kötü yanıt",
+  "action.dislikeActive": "Değerlendirmeyi kaldır",
+  "dialog.title": "Geri bildirim gönder",
+  "dialog.categories": "Geri bildirim kategorisi",
+  "dialog.detail": "Geri bildirim ayrıntıları",
+  "dialog.hint": "Geliştirmemize yardımcı olmak için ayrıntı ekleyin. Gönderiminiz geçerli sohbet günlüğünü içerecek.",
+  "category.task-result": "Görev sonucu",
+  "category.instruction-following": "Talimatı anlama ve uygulama",
+  "category.product-interaction": "Ürün özellikleri ve etkileşim",
+  "category.service-stability": "Kararlılık ve hız",
+  "category.resource-cost": "Kaynak kullanımı ve maliyet",
+  "category.security-privacy-permission": "Güvenlik, gizlilik ve izinler",
+  "category.other": "Diğer",
+  "toast.recorded": "Geri bildiriminiz için teşekkürler",
+  "error.conflict": "Bu geri bildirim başka bir yerde değişti; en son durum gösteriliyor",
+  "error.load": "Geri bildirim yüklenemedi",
+  "error.generic": "Geri bildirim kaydedilemedi",
+  "error.noteTooLarge": "Açıklama çok uzun; kısaltıp yeniden gönderin"
+}

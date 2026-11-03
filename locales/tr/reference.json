@@ -1,0 +1,17 @@
+{
+  "section.files": "Dosyalar ve klasörler",
+  "section.subagents": "Alt temsilciler",
+  "section.sessions": "Oturumlar",
+  "candidate.noCwd": "(çalışma dizini yok)",
+  "crumb.root": "Çalışma alanı",
+  "fileOpen.title": "Dosya açılamadı",
+  "fileOpen.failed": "“{path}” açılamadı. Yeniden deneyin veya bu iletiyi kapatın.",
+  "fileOpen.close": "Kapat",
+  "fileOpen.retry": "Yeniden dene",
+  "time.now": "şimdi",
+  "time.minutes": "{n}dk",
+  "time.hours": "{n}sa",
+  "time.days": "{n}g",
+  "time.months": "{n}ay",
+  "time.years": "{n}y"
+}

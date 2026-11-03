@@ -1,0 +1,11 @@
+{
+  "command": "Komutlar",
+  "skill": "Beceriler",
+  "subagent": "Alt temsilciler",
+  "loading": "Yükleniyor…",
+  "drill.aria": "Klasöre göz at",
+  "drill.hint": "Klasöre göz at",
+  "drill.key": "Tab",
+  "crumbs.aria": "Klasör gezinme",
+  "suggestions.aria": "Önerileri tetikle"
+}

@@ -1,0 +1,7 @@
+{
+  "install": "Diğer eklentilere göz at",
+  "create": "Eklentinizi oluşturun",
+  "createPrompt.sidebar": "Sol kenar çubuğu girişi olan bir DSH eklentisi oluştur.",
+  "createPrompt.conversation": "Bir DSH sohbet görünümü eklentisi oluştur.",
+  "createPrompt.rightbar": "Sağ kenar çubuğu girişi olan bir DSH eklentisi oluştur."
+}
