@@ -1,0 +1,35 @@
+name: Language proposal
+description: Start a new language or take over an existing one
+labels: [language]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        New languages are welcome. The fastest path is a pull request:
+        `node tools/new-locale.mjs <code> "<Native label>"`, translate
+        `locales/<code>/`, then `npm run check` (see CONTRIBUTING.md).
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: BCP 47 code and native label
+      placeholder: nl — Nederlands
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Your role
+      options:
+        - I am a native speaker and will maintain it
+        - I can review, but not maintain
+        - Just suggesting the language
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Terminology preferences, related languages, or anything else useful
+    validations:
+      required: false

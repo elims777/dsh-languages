@@ -1,0 +1,39 @@
+name: Bug report
+description: Something in a translation is wrong, broken, or unreadable
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report! If possible, mention the language code and the screen
+        where the problem appears (Settings → General → Language).
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: The language code from `locales/` (for example `de`, `pt-BR`, `ja`)
+      placeholder: de
+    validations:
+      required: true
+  - type: input
+    id: key
+    attributes:
+      label: Key or screen
+      description: UI text where it appears, or the dictionary key if you know it
+      placeholder: settings.models.save / Settings → Models → Save
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: Current text, expected text, screenshot if possible
+    validations:
+      required: true
+  - type: input
+    id: dsh
+    attributes:
+      label: DSH version
+      placeholder: 0.2.1-rc.5
+    validations:
+      required: false
