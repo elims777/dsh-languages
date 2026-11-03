@@ -6,7 +6,7 @@
 ## Быстрый старт для нового языка
 
 ```bash
-git clone https://github.com/<ник>/dsh-locales && cd dsh-locales
+git clone https://github.com/<ник>/dsh_languages && cd dsh_languages
 node tools/new-locale.mjs de "Deutsch"   # создаст locales/de/ и запись в locales.json
 ```
 

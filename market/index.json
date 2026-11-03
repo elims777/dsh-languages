@@ -1,8 +1,8 @@
 {
   "format": 1,
   "title": {
-    "en": "dsh-locales — community translations",
-    "ru": "dsh-locales — переводы сообщества"
+    "en": "dsh_languages — community translations",
+    "ru": "dsh_languages — переводы сообщества"
   },
   "description": {
     "en": "A small plugin market index with language packs for DeepSeek Harness.",
@@ -28,7 +28,7 @@
   },
   "plugins": [
     {
-      "name": "dsh-locales",
+      "name": "dsh_languages",
       "title": {
         "en": "14 languages for the web interface",
         "ru": "14 языков для веб-интерфейса"

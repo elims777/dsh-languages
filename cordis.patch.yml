@@ -3,4 +3,4 @@
 # every translated language and its dictionaries.
 - insert:
     - id: locales
-      name: dsh-locales
+      name: dsh_languages
