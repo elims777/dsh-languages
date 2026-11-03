@@ -1,0 +1,20 @@
+{
+  "run.title": "{name}",
+  "run.members.one": "{count} सदस्य",
+  "run.members.other": "{count} सदस्य",
+  "run.empty": "कोई सदस्य शुरू नहीं हुआ",
+  "phase.unassigned": "चरण-रहित",
+  "phase.empty": "खाली चरण नाम",
+  "statusCount.running": "{count} चल रहे",
+  "statusCount.completed": "{count} पूर्ण",
+  "statusCount.failed": "{count} विफल",
+  "statusCount.cancelled": "{count} रद्द",
+  "statusCount.interrupted": "{count} बाधित",
+  "member.empty": "खाली सदस्य नाम",
+  "member.open": "{name} खोलें",
+  "status.running": "चल रहा है",
+  "status.completed": "पूर्ण",
+  "status.failed": "विफल",
+  "status.cancelled": "रद्द",
+  "status.interrupted": "बाधित"
+}

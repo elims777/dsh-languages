@@ -1,0 +1,7 @@
+{
+  "install": "अन्य प्लगइन ब्राउज़ करें",
+  "create": "अपना प्लगइन बनाएँ",
+  "createPrompt.sidebar": "बाएँ साइडबार प्रविष्टि वाला DSH प्लगइन बनाएँ।",
+  "createPrompt.conversation": "DSH बातचीत दृश्य प्लगइन बनाएँ।",
+  "createPrompt.rightbar": "दाएँ साइडबार प्रविष्टि वाला DSH प्लगइन बनाएँ।"
+}

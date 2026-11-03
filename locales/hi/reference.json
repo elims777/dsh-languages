@@ -1,0 +1,17 @@
+{
+  "section.files": "फ़ाइलें और फ़ोल्डर",
+  "section.subagents": "सबएजेंट",
+  "section.sessions": "सत्र",
+  "candidate.noCwd": "(कोई cwd नहीं)",
+  "crumb.root": "कार्यक्षेत्र",
+  "fileOpen.title": "फ़ाइल नहीं खुल सकी",
+  "fileOpen.failed": "“{path}” नहीं खुल सकी। फिर कोशिश करें या यह संदेश बंद करें।",
+  "fileOpen.close": "बंद करें",
+  "fileOpen.retry": "फिर कोशिश करें",
+  "time.now": "अभी",
+  "time.minutes": "{n}min",
+  "time.hours": "{n}h",
+  "time.days": "{n}d",
+  "time.months": "{n}mo",
+  "time.years": "{n}y"
+}

@@ -1,0 +1,19 @@
+{
+  "chip.label": "योजना",
+  "preview.title": "योजना",
+  "preview.document": "योजना · Markdown",
+  "preview.action": "खोलें",
+  "preview.open": "साइडबार में योजना खोलें",
+  "preview.full": "पूरी योजना देखें",
+  "preview.openNamed": "योजना खोलें: {title}",
+  "preview.loading": "योजना लोड हो रही है…",
+  "preview.failed": "योजना लोड नहीं हो सकी",
+  "preview.invalidAddress": "अमान्य योजना पता",
+  "preview.historyUnavailable": "सत्र इतिहास उपलब्ध नहीं है",
+  "preview.notFound": "यह योजना नहीं मिली",
+  "preview.unavailable": "योजना पूर्वावलोकन उपलब्ध नहीं है",
+  "preview.expired": "यह अस्थायी योजना पूर्वावलोकन समाप्त हो गया है। इसे लंबित समीक्षा कार्ड से फिर से खोलें।",
+  "chip.on.aria": "योजना मोड चालू है, बंद करने के लिए दबाएँ",
+  "chip.on.title": "योजना मोड चालू — बंद करने के लिए क्लिक करें (/plan off)",
+  "chip.exitFailed": "योजना मोड से बाहर नहीं निकल सके"
+}

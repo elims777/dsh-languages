@@ -1,0 +1,10 @@
+{
+  "row.title": "कौशल",
+  "row.running": "कौशल लोड हो रहा है",
+  "row.preparing": "कौशल लोड करने की तैयारी",
+  "row.failed": "कौशल लोड करना विफल",
+  "row.stopped": "कौशल लोड करना रोका गया",
+  "row.instructions": "निर्देश",
+  "row.inspect": "निरीक्षण करें",
+  "menu.userOnly": "केवल उपयोगकर्ता के लिए"
+}

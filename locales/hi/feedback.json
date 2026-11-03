@@ -1,0 +1,22 @@
+{
+  "action.like": "अच्छा उत्तर",
+  "action.likeActive": "रेटिंग हटाएँ",
+  "action.dislike": "खराब उत्तर",
+  "action.dislikeActive": "रेटिंग हटाएँ",
+  "dialog.title": "प्रतिक्रिया सबमिट करें",
+  "dialog.categories": "प्रतिक्रिया श्रेणी",
+  "dialog.detail": "प्रतिक्रिया विवरण",
+  "dialog.hint": "सुधार में मदद के लिए विवरण जोड़ें। आपके सबमिशन में मौजूदा बातचीत लॉग शामिल होगा।",
+  "category.task-result": "कार्य परिणाम",
+  "category.instruction-following": "निर्देश समझना और पालन करना",
+  "category.product-interaction": "उत्पाद सुविधाएँ और इंटरैक्शन",
+  "category.service-stability": "स्थिरता और गति",
+  "category.resource-cost": "संसाधन उपयोग और लागत",
+  "category.security-privacy-permission": "सुरक्षा, गोपनीयता और अनुमतियाँ",
+  "category.other": "अन्य",
+  "toast.recorded": "आपकी प्रतिक्रिया के लिए धन्यवाद",
+  "error.conflict": "यह प्रतिक्रिया कहीं और बदल गई; नवीनतम स्थिति दिखाई गई है",
+  "error.load": "प्रतिक्रिया लोड नहीं हो सकी",
+  "error.generic": "प्रतिक्रिया सहेजी नहीं जा सकी",
+  "error.noteTooLarge": "विवरण बहुत लंबा है; छोटा करें और फिर सबमिट करें"
+}

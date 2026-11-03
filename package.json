@@ -1,7 +1,7 @@
 {
   "name": "dsh-locales",
-  "version": "0.1.0",
-  "description": "Community translations for the DeepSeek Harness web interface: one bundle, many languages",
+  "version": "1.0.0",
+  "description": "Fourteen community translations for the DeepSeek Harness web interface: one bundle, many languages",
   "keywords": [
     "dsh-plugin",
     "deepseek-harness",
