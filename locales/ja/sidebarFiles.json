@@ -1,0 +1,19 @@
+{
+  "shortcut.noSession": "先にセッションを選択",
+  "type.label": "ファイル",
+  "guide.title": "ワークスペースのファイル",
+  "guide.description": "このセッションのワークスペース内のファイルを参照",
+  "loading": "読み込み中…",
+  "empty": "空のディレクトリ",
+  "truncated": "エントリが多すぎるため、一部のみ表示。",
+  "noWorkspace": "このセッションにはワークスペースディレクトリがない。",
+  "reload": "再読み込み",
+  "autoRefresh": "自動更新",
+  "autoRefresh.enable": "自動更新を有効化",
+  "autoRefresh.disable": "自動更新を無効化",
+  "entry.other": "ファイルでもディレクトリでもないため開けない。",
+  "error.notFound": "そのディレクトリは存在しない。移動または削除された可能性がある。",
+  "error.outsideWorkspace": "そのディレクトリはワークスペース外のため、サイドバーでは読み取らない。",
+  "error.notDirectory": "ディレクトリではない。",
+  "error.unavailable": "読み取りに失敗: {message}"
+}

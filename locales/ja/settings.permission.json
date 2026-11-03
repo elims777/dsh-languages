@@ -1,0 +1,14 @@
+{
+  "title": "権限",
+  "description": "新しいセッションの既定の権限モードを選択",
+  "loading": "読み込み中",
+  "unavailable": "利用不可",
+  "preset.readOnly": "読み取り専用",
+  "preset.workspaceWrite": "ワークスペース書き込み",
+  "preset.fullAccess": "フルアクセス",
+  "confirm.title": "フルアクセスを有効化？",
+  "confirm.description": "フルアクセスでは、新しいセッションで確認ステップを減らし、機密操作、ファイル変更、外部コマンドなど多くの操作を直接実行できる。以降のタスクを信頼できる場合にのみ使用。",
+  "confirm.acknowledge": "リスクを理解して続行する",
+  "confirm.cancel": "キャンセル",
+  "confirm.enable": "フルアクセスを有効化"
+}

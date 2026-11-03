@@ -1,0 +1,7 @@
+{
+  "install": "他のプラグインを閲覧",
+  "create": "プラグインを作成",
+  "createPrompt.sidebar": "左サイドバー項目を持つ DSH プラグインを作成。",
+  "createPrompt.conversation": "DSH 会話ビュープラグインを作成。",
+  "createPrompt.rightbar": "右サイドバー項目を持つ DSH プラグインを作成。"
+}

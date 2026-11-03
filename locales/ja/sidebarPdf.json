@@ -1,0 +1,17 @@
+{
+  "zoomControls": "ズーム操作",
+  "zoomMenu": "ズームを選択",
+  "zoomOut": "縮小",
+  "zoomIn": "拡大",
+  "zoomFitWidth": "幅に合わせる",
+  "zoomValue": "{percent}%",
+  "title": "PDF",
+  "pageImage": "PDF ページ {page}",
+  "loading": "ドキュメントをレンダリング中...",
+  "rendering": "ページをレンダリング中…",
+  "failed": "PDF を表示できません: {message}",
+  "password": "この PDF にはパスワードが必要です。パスワード保護されたプレビューには対応していません。",
+  "workerFailed": "PDF のレンダリング処理を続行できませんでした。再試行してください。",
+  "unsupported": "PDF プレビューには完全なファイル内容が必要です。",
+  "retry": "再試行"
+}
