@@ -2,7 +2,7 @@
   "title": "ウェブ検索",
   "description": "DeepSeek の検索プロバイダーを設定します。",
   "useSearchApi": "新しいウェブ検索 API を使用",
-  "useSearchApiHint": "デフォルトではオフです。検索は DeepSeek Messages 経由で実行されます。新しいウェブ検索 API の機能と料金については、 ",
+  "useSearchApiHint": "デフォルトではオフです。検索は DeepSeek Messages 経由で実行されます。新しいウェブ検索 API の機能と料金については ",
   "searchGuide": "検索・取得ガイド",
   "searchGuideUrl": "https://api-docs.deepseek.com/guides/search",
   "apiKey": "API キー",
