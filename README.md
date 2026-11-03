@@ -55,6 +55,19 @@ dsh plugin add github:elims777/dsh_languages
 
 Перезапустите приложение и выберите язык в настройках.
 
+### Магазин (Discover)
+
+Если в сборке включён плагин-маркет (вкладка **Discover** в Plugins), добавьте
+индекс этого репозитория:
+
+```
+https://raw.githubusercontent.com/elims777/dsh_languages/main/market/index.json
+```
+
+Формат индекса — `market/index.json` (спецификация DSH `format: 1`); версия
+плагина ставится по коммиту, поэтому установка воспроизводима.
+
+
 ### 3. Вручную (офлайн)
 
 Скачайте `dsh-locales-<версия>.zip` из релизов, распакуйте и запустите:

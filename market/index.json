@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "title": {
+    "en": "dsh-locales — community translations",
+    "ru": "dsh-locales — переводы сообщества"
+  },
+  "description": {
+    "en": "A small plugin market index with language packs for DeepSeek Harness.",
+    "ru": "Небольшой индекс магазина плагинов с языковыми пакетами для DeepSeek Harness."
+  },
+  "metadata": {
+    "categories": {
+      "locale": {
+        "title": {
+          "en": "Localization",
+          "ru": "Локализация"
+        }
+      }
+    },
+    "labels": {
+      "community": {
+        "title": {
+          "en": "Community",
+          "ru": "Сообщество"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-locales",
+      "title": {
+        "en": "14 languages for the web interface",
+        "ru": "14 языков для веб-интерфейса"
+      },
+      "description": {
+        "en": "Russian, Spanish, Brazilian Portuguese, German, French, Italian, Polish, Turkish, Japanese, Korean, Traditional Chinese, Indonesian, Vietnamese and Hindi — 2 886 strings per language, registered through the public ctx.locale API.",
+        "ru": "Русский, испанский, бразильский португальский, немецкий, французский, итальянский, польский, турецкий, японский, корейский, традиционный китайский, индонезийский, вьетнамский и хинди — по 2 886 строк на язык, через публичный ctx.locale."
+      },
+      "author": "elims777",
+      "homepage": "https://github.com/elims777/dsh_languages",
+      "repository": {
+        "url": "https://github.com/elims777/dsh_languages"
+      },
+      "metadata": {
+        "category": "locale",
+        "labels": ["community"],
+        "keywords": [
+          "locale",
+          "i18n",
+          "translation",
+          "russian",
+          "spanish",
+          "german",
+          "french",
+          "japanese",
+          "korean",
+          "chinese",
+          "portuguese",
+          "italian",
+          "polish",
+          "turkish",
+          "indonesian",
+          "vietnamese",
+          "hindi"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1793704800,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/elims777/dsh_languages",
+            "commit": "bf10bfaf7d6fb5bfcf2560c405dad1969cbde95a"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.5"
+          }
+        }
+      ]
+    }
+  ]
+}
