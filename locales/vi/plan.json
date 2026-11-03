@@ -1,0 +1,19 @@
+{
+  "chip.label": "Kế hoạch",
+  "preview.title": "Kế hoạch",
+  "preview.document": "Kế hoạch · Markdown",
+  "preview.action": "Mở",
+  "preview.open": "Mở kế hoạch ở thanh bên",
+  "preview.full": "Xem toàn bộ kế hoạch",
+  "preview.openNamed": "Mở kế hoạch: {title}",
+  "preview.loading": "Đang tải kế hoạch…",
+  "preview.failed": "Không thể tải kế hoạch",
+  "preview.invalidAddress": "Địa chỉ kế hoạch không hợp lệ",
+  "preview.historyUnavailable": "Lịch sử phiên không khả dụng",
+  "preview.notFound": "Không tìm thấy kế hoạch này",
+  "preview.unavailable": "Bản xem trước kế hoạch không khả dụng",
+  "preview.expired": "Bản xem trước kế hoạch tạm thời này đã hết hạn. Mở lại từ thẻ chờ duyệt.",
+  "chip.on.aria": "Chế độ kế hoạch đang bật, nhấn để tắt",
+  "chip.on.title": "Chế độ kế hoạch đang bật — bấm để tắt (/plan off)",
+  "chip.exitFailed": "Không thể thoát chế độ kế hoạch"
+}
