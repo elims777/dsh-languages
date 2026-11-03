@@ -130,7 +130,7 @@
   "timing.intervalHint.second": "Pelo menos 60 segundos. O intervalo conta desde a criação da tarefa ou a última alteração da regra e independe de fusos horários.",
   "timing.zoneNoStored": "Uma tarefa única armazena apenas o momento alvo, não um fuso horário. A data e a hora são interpretadas no fuso horário selecionado.",
   "timing.inactive": "Tarefas inativas são somente leitura. O horário delas não pode ser editado.",
-  "timing.conflict": "Esta tarefa mudou enquanto você editava. Seu rascunho foi mantido. Cancele e reabra após atualizar para editar a regra mais recente.",
+  "timing.conflict": "Esta tarefa mudou durante a edição. Seu rascunho foi mantido. Cancele e reabra após atualizar para editar a regra mais recente.",
   "timing.notFound": "Esta tarefa não está mais disponível. Seu rascunho foi mantido; cancele para fechar o editor.",
   "timing.subagentSession": "Esta sessão pertence a um subagente, que nunca recebe lembretes entregues.",
   "timing.invalid": "Insira uma data e uma hora válidas ou verifique os campos de horário.",

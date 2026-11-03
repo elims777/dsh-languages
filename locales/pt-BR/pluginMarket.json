@@ -53,7 +53,7 @@
   "statusProvided": "Fornecido pelo DSH",
   "incompatible": "Esta versão não é compatível com o DSH {runtime} em execução; ela exige DSH {range}.",
   "noCompatibleVersion": "Nenhuma versão é compatível com o DSH {runtime}",
-  "exempted": "Esta versão não é compatível com o DSH em execução, mas você definiu uma isenção de compatibilidade para ela.",
+  "exempted": "Esta versão não é compatível com o DSH em execução, mas há uma isenção de compatibilidade definida para ela.",
   "backToList": "Descobrir",
   "factSource": "Origem",
   "factPackage": "Pacote",
@@ -76,5 +76,5 @@
   "versionExempted": "Isenta",
   "versionPrerelease": "Pré-lançamento",
   "confirmTitle": "Instalar \"{name}\"?",
-  "installTrust": "Plugins são executados nesta máquina com suas permissões. Confirme que você confia na origem deste."
+  "installTrust": "Plugins são executados nesta máquina com suas permissões. Confirme que a origem deste é confiável."
 }
