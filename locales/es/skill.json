@@ -1,0 +1,10 @@
+{
+  "row.title": "Habilidad",
+  "row.running": "Cargando la habilidad",
+  "row.preparing": "Preparando la carga de una habilidad",
+  "row.failed": "Error al cargar la habilidad",
+  "row.stopped": "Carga de la habilidad detenida",
+  "row.instructions": "Instrucciones",
+  "row.inspect": "Inspeccionar",
+  "menu.userOnly": "solo para el usuario"
+}

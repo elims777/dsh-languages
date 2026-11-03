@@ -1,0 +1,16 @@
+{
+  "title": "Shell",
+  "description": "Limita cuánto tiempo puede ejecutarse cada comando y cuánta salida puede generar.",
+  "timeoutMs": "Tiempo de espera del comando (ms)",
+  "timeoutMsHint": "Cuánto tiempo puede ejecutarse un comando antes de terminarlo.",
+  "maxOutputBytes": "Límite de salida por flujo (bytes)",
+  "maxOutputBytesHint": "La salida que supera este límite se vuelca en un archivo temporal en lugar de perderse.",
+  "overridden": "Sobrescrito",
+  "reset": "Restablecer",
+  "readOnly": "Los ajustes son de solo lectura en esta instalación.",
+  "unavailable": "Este complemento no está cargado, así que ahora no se puede configurar.",
+  "save": "Guardar",
+  "saving": "Guardando…",
+  "saveFailed": "La instalación no aceptó estos valores; se dejaron para que los corrijas.",
+  "invalidNumber": "Introduce un número o déjalo en blanco para usar el valor predeterminado."
+}

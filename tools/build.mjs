@@ -53,9 +53,15 @@ for (const entry of catalog) {
 
 const dictionaries = {};
 const untranslated = {};
+const complete = [];
 
 for (const language of languages) {
   const translated = readNamespaceDir(language.dir);
+  if (translated.size !== english.size) {
+    warnings.push(`${language.id}: ${translated.size}/${english.size} namespaces translated, skipped until complete`);
+    continue;
+  }
+  complete.push(language);
   const dicts = {};
   const kept = [];
   for (const [ns, en] of english) {
@@ -98,7 +104,7 @@ if (problems.length) {
   process.exit(1);
 }
 
-const languageLiterals = languages
+const languageLiterals = complete
   .map((language) => `\t\t\t{ id: ${JSON.stringify(language.id)}, label: ${JSON.stringify(language.label)}, fallback: ${JSON.stringify(FALLBACK)} },`)
   .join('\n');
 
@@ -141,7 +147,7 @@ ${languageLiterals}
 fs.mkdirSync(path.join(root, 'lib'), { recursive: true });
 fs.writeFileSync(path.join(root, 'lib', 'client.js'), body);
 
-const strings = languages.length * [...english.values()].reduce((n, dict) => n + Object.keys(dict).length, 0);
-console.log(`languages ${languages.length}, namespaces ${english.size}, strings ${strings}, bytes ${Buffer.byteLength(body)}`);
+const strings = complete.length * [...english.values()].reduce((n, dict) => n + Object.keys(dict).length, 0);
+console.log(`languages ${complete.length}, namespaces ${english.size}, strings ${strings}, bytes ${Buffer.byteLength(body)}`);
 for (const [id, count] of Object.entries(untranslated)) console.log(`  ${id}: ${count} strings kept identical to English`);
 for (const warning of warnings) console.log(`  warning: ${warning}`);

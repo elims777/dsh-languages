@@ -1,0 +1,7 @@
+{
+  "install": "Explorar otros complementos",
+  "create": "Crea tu complemento",
+  "createPrompt.sidebar": "Crea un complemento de DSH con una entrada en el panel lateral izquierdo.",
+  "createPrompt.conversation": "Crea un complemento de vista de conversación de DSH.",
+  "createPrompt.rightbar": "Crea un complemento de DSH con una entrada en el panel lateral derecho."
+}
