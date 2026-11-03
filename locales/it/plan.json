@@ -1,0 +1,19 @@
+{
+  "chip.label": "Piano",
+  "preview.title": "Piano",
+  "preview.document": "Piano · Markdown",
+  "preview.action": "Apri",
+  "preview.open": "Apri il piano nella barra laterale",
+  "preview.full": "Visualizza piano completo",
+  "preview.openNamed": "Apri piano: {title}",
+  "preview.loading": "Caricamento piano…",
+  "preview.failed": "Impossibile caricare il piano",
+  "preview.invalidAddress": "Indirizzo del piano non valido",
+  "preview.historyUnavailable": "Cronologia della sessione non disponibile",
+  "preview.notFound": "Piano non trovato",
+  "preview.unavailable": "Anteprima del piano non disponibile",
+  "preview.expired": "Questa anteprima temporanea del piano è scaduta. Riaprila dalla scheda di revisione in sospeso.",
+  "chip.on.aria": "Modalità piano attiva, premi per disattivare",
+  "chip.on.title": "Modalità piano attiva — fai clic per disattivare (/plan off)",
+  "chip.exitFailed": "Impossibile uscire dalla modalità piano"
+}

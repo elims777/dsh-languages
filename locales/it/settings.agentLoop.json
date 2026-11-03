@@ -1,0 +1,14 @@
+{
+  "title": "Ciclo dell'agente",
+  "description": "Controllare come l'agente distribuisce le chiamate agli strumenti.",
+  "maxParallel": "Chiamate agli strumenti in parallelo",
+  "maxParallelHint": "Limite massimo di chiamate sicure in parallelo eseguite contemporaneamente in un passo.",
+  "overridden": "Sovrascritto",
+  "reset": "Ripristinare il valore predefinito",
+  "readOnly": "Questa distribuzione salva le impostazioni in sola lettura.",
+  "unavailable": "Questo plugin non è caricato, quindi al momento non può essere configurato.",
+  "save": "Salvare",
+  "saving": "Salvataggio…",
+  "saveFailed": "La distribuzione non ha accettato questi valori; sono stati lasciati per la correzione.",
+  "invalidNumber": "Inserire un numero o lasciare vuoto per usare il valore predefinito."
+}

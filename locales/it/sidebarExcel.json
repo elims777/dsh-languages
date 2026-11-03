@@ -1,0 +1,17 @@
+{
+  "title": "Foglio di calcolo",
+  "language": "en",
+  "loading": "Rendering del documento...",
+  "invalid": "Impossibile aprire questo foglio di calcolo. Verificarne formato, contenuto o protezione con password.",
+  "tooLarge": "Questa cartella di lavoro supera il limite di dimensione dell'anteprima.",
+  "timeout": "Tempo scaduto durante l'apertura della cartella di lavoro. Provare con un file più piccolo.",
+  "encoding": "Impossibile leggere questa codifica del testo. Salvare il file come UTF-8 o UTF-16 con BOM e riprovare.",
+  "formulaWarning": "Questa cartella di lavoro contiene formule. I risultati visualizzati potrebbero essere mancanti o inesatti.",
+  "unsupportedNotice": "Questa anteprima non supporta {features} in questa cartella di lavoro. Aprirla in un'applicazione di sistema per l'esperienza completa.",
+  "charts": "grafici",
+  "images": "immagini",
+  "shapes": "forme",
+  "conditionalFormatting": "formattazione condizionale",
+  "featureSeparator": ", ",
+  "retry": "Riprovare"
+}

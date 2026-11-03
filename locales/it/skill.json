@@ -1,0 +1,10 @@
+{
+  "row.title": "Competenza",
+  "row.running": "Caricamento competenza",
+  "row.preparing": "Preparazione al caricamento di una competenza",
+  "row.failed": "Caricamento della competenza non riuscito",
+  "row.stopped": "Caricamento della competenza interrotto",
+  "row.instructions": "Istruzioni",
+  "row.inspect": "Esamina",
+  "menu.userOnly": "solo utente"
+}
