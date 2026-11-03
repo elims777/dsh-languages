@@ -1,0 +1,17 @@
+{
+  "zoomControls": "縮放控制項",
+  "zoomMenu": "選擇縮放比例",
+  "zoomOut": "縮小",
+  "zoomIn": "放大",
+  "zoomFitWidth": "符合寬度",
+  "zoomValue": "{percent}%",
+  "title": "PDF",
+  "pageImage": "PDF 第 {page} 頁",
+  "loading": "正在轉譯文件...",
+  "rendering": "正在轉譯頁面…",
+  "failed": "無法顯示 PDF：{message}",
+  "password": "此 PDF 需要密碼；不支援受密碼保護的預覽。",
+  "workerFailed": "PDF 轉譯程序無法繼續。請重試。",
+  "unsupported": "PDF 預覽需要完整的檔案內容。",
+  "retry": "重試"
+}

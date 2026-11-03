@@ -1,0 +1,19 @@
+{
+  "shortcut.noSession": "請先選擇工作階段",
+  "type.label": "檔案",
+  "guide.title": "工作區檔案",
+  "guide.description": "瀏覽此工作階段工作區中的檔案",
+  "loading": "正在讀取…",
+  "empty": "目錄為空",
+  "truncated": "項目過多，僅顯示部分項目。",
+  "noWorkspace": "此工作階段沒有工作區目錄。",
+  "reload": "重新載入",
+  "autoRefresh": "自動重新整理",
+  "autoRefresh.enable": "啟用自動重新整理",
+  "autoRefresh.disable": "停用自動重新整理",
+  "entry.other": "不是檔案或目錄，因此無法開啟。",
+  "error.notFound": "該目錄已不存在，可能已被移動或刪除。",
+  "error.outsideWorkspace": "該目錄位於工作區之外，因此側邊欄不會讀取。",
+  "error.notDirectory": "那不是目錄。",
+  "error.unavailable": "讀取失敗：{message}"
+}

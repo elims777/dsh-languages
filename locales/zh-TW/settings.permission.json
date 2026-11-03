@@ -1,0 +1,14 @@
+{
+  "title": "權限",
+  "description": "選擇新工作階段的預設權限模式",
+  "loading": "正在載入",
+  "unavailable": "無法使用",
+  "preset.readOnly": "唯讀",
+  "preset.workspaceWrite": "工作區寫入",
+  "preset.fullAccess": "完整存取",
+  "confirm.title": "要啟用完整存取嗎？",
+  "confirm.description": "完整存取會讓新工作階段減少確認步驟，並直接執行更多動作，包括敏感操作、檔案變更或外部指令。僅在信任後續任務時使用。",
+  "confirm.acknowledge": "我了解風險並想繼續",
+  "confirm.cancel": "取消",
+  "confirm.enable": "啟用完整存取"
+}

@@ -1,0 +1,22 @@
+{
+  "action.like": "回應良好",
+  "action.likeActive": "移除評分",
+  "action.dislike": "回應不佳",
+  "action.dislikeActive": "移除評分",
+  "dialog.title": "送出意見回饋",
+  "dialog.categories": "意見回饋類別",
+  "dialog.detail": "意見回饋詳細內容",
+  "dialog.hint": "新增詳細內容以協助我們改進。送出內容將包含目前的對話記錄。",
+  "category.task-result": "任務結果",
+  "category.instruction-following": "指令理解與遵循",
+  "category.product-interaction": "產品功能與互動",
+  "category.service-stability": "穩定性與速度",
+  "category.resource-cost": "資源用量與成本",
+  "category.security-privacy-permission": "安全性、隱私與權限",
+  "category.other": "其他",
+  "toast.recorded": "感謝你的意見回饋",
+  "error.conflict": "此意見回饋已在其他位置變更；此處顯示最新狀態",
+  "error.load": "無法載入意見回饋",
+  "error.generic": "無法儲存意見回饋",
+  "error.noteTooLarge": "說明過長；請縮短後重新送出"
+}

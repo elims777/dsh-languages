@@ -1,0 +1,19 @@
+{
+  "chip.label": "計畫",
+  "preview.title": "計畫",
+  "preview.document": "計畫 · Markdown",
+  "preview.action": "開啟",
+  "preview.open": "在側邊欄開啟計畫",
+  "preview.full": "檢視完整計畫",
+  "preview.openNamed": "開啟計畫：{title}",
+  "preview.loading": "正在載入計畫…",
+  "preview.failed": "無法載入計畫",
+  "preview.invalidAddress": "計畫位址無效",
+  "preview.historyUnavailable": "工作階段記錄無法使用",
+  "preview.notFound": "找不到此計畫",
+  "preview.unavailable": "計畫預覽無法使用",
+  "preview.expired": "此臨時計畫預覽已過期。請從待審閱卡片重新開啟。",
+  "chip.on.aria": "計畫模式已開啟，按下可關閉",
+  "chip.on.title": "計畫模式已開啟 — 按一下可關閉（/plan off）",
+  "chip.exitFailed": "無法離開計畫模式"
+}

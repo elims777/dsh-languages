@@ -1,0 +1,19 @@
+{
+  "mode": "存取模式，目前：{name}",
+  "close": "關閉",
+  "preset.readOnly": "唯讀",
+  "preset.workspaceWrite": "工作區寫入",
+  "preset.fullAccess": "完整存取",
+  "confirm.title": "要啟用完整存取嗎？",
+  "confirm.description": "完整存取會減少確認步驟，讓代理直接執行更多動作，包括敏感操作、檔案變更或外部指令。請只在信任目前任務時使用。",
+  "confirm.acknowledge": "我了解風險並想繼續",
+  "confirm.cancel": "取消",
+  "confirm.enable": "啟用完整存取",
+  "auto.label": "自動審查",
+  "auto.badge": "EXP",
+  "auto.description": "在對每個原生工具呼叫和 PTC 內部呼叫進行實驗性的同模型審查後，於無沙箱的狀態下執行。",
+  "auto.confirm.title": "要啟用自動審查（實驗性）嗎？",
+  "auto.confirm.description": "自動審查會在無沙箱的狀態下執行。在每次原生工具呼叫和 PTC 內部呼叫之前，會由與目前代理相同的模型審查是否允許；對於其拒絕的每次呼叫，由您核准或拒絕。此功能為實驗性，可能會錯誤允許或拒絕動作，並會使用額外的權杖。",
+  "auto.confirm.acknowledge": "我了解這些風險並想繼續",
+  "auto.confirm.enable": "啟用自動審查"
+}

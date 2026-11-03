@@ -1,0 +1,17 @@
+{
+  "section.files": "檔案與資料夾",
+  "section.subagents": "子代理",
+  "section.sessions": "工作階段",
+  "candidate.noCwd": "（無 cwd）",
+  "crumb.root": "工作區",
+  "fileOpen.title": "無法開啟檔案",
+  "fileOpen.failed": "無法開啟「{path}」。請再試一次或關閉此訊息。",
+  "fileOpen.close": "關閉",
+  "fileOpen.retry": "重試",
+  "time.now": "現在",
+  "time.minutes": "{n} 分",
+  "time.hours": "{n} 時",
+  "time.days": "{n} 天",
+  "time.months": "{n} 個月",
+  "time.years": "{n} 年"
+}

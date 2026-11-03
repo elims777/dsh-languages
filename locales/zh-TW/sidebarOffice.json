@@ -1,0 +1,17 @@
+{
+  "title": "Office 文件",
+  "loading": "正在轉譯文件...",
+  "retry": "重試",
+  "viewMissingFonts": "缺少字型: {count}。按一下檢視。",
+  "missingFontsTitle": "缺少字型",
+  "missingFontsDescription": "此預覽無法使用這些字型。文字與版面可能與原始文件不同。",
+  "missingFontsCount": "字型: {count}",
+  "closeDetails": "關閉字型詳細資料",
+  "unavailable": "Office 預覽無法使用。請在執行 DeepSeek Harness 的電腦上啟用文件預覽服務。",
+  "invalid": "無法預覽此 Office 檔案。檔案可能已損毀、受密碼保護，或副檔名錯誤。",
+  "tooLarge": "Office 檔案或轉換後的 PDF 超過預覽大小限制。請縮小檔案或調整預覽設定。",
+  "failed": "Office 轉換未產生可用的 PDF。請檢查檔案後再試。",
+  "timeout": "Office 轉換逾時。請再試一次。",
+  "busy": "Office 預覽忙碌中。請稍後再試。",
+  "changed": "讀取期間檔案已變更。請重新開啟預覽。"
+}

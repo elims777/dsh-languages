@@ -1,0 +1,13 @@
+{
+  "zoomControls": "縮放控制項",
+  "zoomMenu": "選擇縮放比例",
+  "zoomOut": "縮小",
+  "zoomIn": "放大",
+  "zoomFitWidth": "符合寬度",
+  "zoomValue": "{percent}%",
+  "title": "圖片",
+  "preview": "圖片預覽：{name}",
+  "loading": "正在轉譯文件...",
+  "failed": "無法顯示此圖片。",
+  "unsupported": "圖片預覽需要完整的檔案內容。"
+}

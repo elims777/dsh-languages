@@ -1,0 +1,12 @@
+{
+  "header.more": "更多操作",
+  "menu.download": "下載工作階段記錄",
+  "menu.feedback": "意見回饋",
+  "dialog.preparingTitle": "正在匯出工作階段",
+  "dialog.preparingDescription": "正在準備包含此工作階段、其子工作階段與附件的 ZIP。",
+  "dialog.successTitle": "工作階段下載已開始",
+  "dialog.successDescription": "瀏覽器正在下載工作階段 ZIP。",
+  "dialog.errorTitle": "工作階段匯出失敗",
+  "dialog.close": "關閉",
+  "dialog.commandFailed": "無法開始工作階段匯出。"
+}
