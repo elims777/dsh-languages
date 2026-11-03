@@ -41,7 +41,7 @@
 ### 1. Через интерфейс
 
 1. **Plugins** (боковая панель) → **Install**.
-2. Укажите spec: `dsh-locales` (npm) или `github:<ник>/dsh-locales` (GitHub).
+2. Укажите spec: `dsh-locales` (npm) или `github:elims777/dsh_languages` (GitHub).
 3. Включите бандл и обновите страницу (Ctrl+R).
 4. **Settings → General → Language** → выберите язык.
 
@@ -50,7 +50,7 @@
 ```bash
 dsh plugin add dsh-locales
 # или из git:
-dsh plugin add github:<ник>/dsh-locales
+dsh plugin add github:elims777/dsh_languages
 ```
 
 Перезапустите приложение и выберите язык в настройках.

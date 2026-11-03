@@ -13,6 +13,14 @@
     "translation"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elims777/dsh_languages.git"
+  },
+  "homepage": "https://github.com/elims777/dsh_languages#readme",
+  "bugs": {
+    "url": "https://github.com/elims777/dsh_languages/issues"
+  },
   "type": "module",
   "main": "lib/index.js",
   "exports": {
