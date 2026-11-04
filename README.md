@@ -41,7 +41,7 @@
 ### 1. Через интерфейс
 
 1. **Plugins** (боковая панель) → **Install**.
-2. Укажите spec: `dsh-languages` (npm) или `github:elims777/dsh-languages` (GitHub).
+2. Укажите spec: `dsh-languages` (npm) или `github:elims777/dsh-languages` (GitHub) — npm предпочтительнее.
 3. Включите бандл и обновите страницу (Ctrl+R).
 4. **Settings → General → Language** → выберите язык.
 
