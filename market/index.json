@@ -67,12 +67,12 @@
       },
       "versions": [
         {
-          "version": "1.0.1",
-          "publishTimestamp": 1793722785,
+          "version": "1.0.2",
+          "publishTimestamp": 1793812977,
           "source": {
             "type": "git",
             "url": "https://github.com/elims777/dsh-languages",
-            "commit": "e56fbc552ac8c25e00940c632d827f3af1446eed"
+            "commit": "c0dc3652425c911aef59e7ec8677c7456cf1c3aa"
           },
           "engines": {
             "dsh": ">=0.2.1-rc.5"
