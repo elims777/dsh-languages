@@ -1,6 +1,6 @@
 {
-  "name": "dsh_languages",
-  "version": "1.0.1",
+  "name": "dsh-languages",
+  "version": "1.0.2",
   "description": "Fourteen community translations for the DeepSeek Harness web interface: one bundle, many languages",
   "keywords": [
     "dsh-plugin",
@@ -15,11 +15,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elims777/dsh_languages.git"
+    "url": "git+https://github.com/elims777/dsh-languages.git"
   },
-  "homepage": "https://github.com/elims777/dsh_languages#readme",
+  "homepage": "https://github.com/elims777/dsh-languages#readme",
   "bugs": {
-    "url": "https://github.com/elims777/dsh_languages/issues"
+    "url": "https://github.com/elims777/dsh-languages/issues"
   },
   "type": "module",
   "main": "lib/index.js",

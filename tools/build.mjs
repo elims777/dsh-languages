@@ -18,7 +18,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const localesDir = path.join(root, 'locales');
 
-const PACKAGE_NAME = 'dsh_languages';
+const PACKAGE_NAME = 'dsh-languages';
 const FALLBACK = 'en';
 const LANGUAGE_ID = /^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$/;
 

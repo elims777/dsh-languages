@@ -1,4 +1,4 @@
-# dsh_languages
+# dsh-languages
 
 Переводы интерфейса [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)
 (DSH) силами сообщества: один плагин-пакет, много языков. Добавляет в приложение
@@ -41,16 +41,16 @@
 ### 1. Через интерфейс
 
 1. **Plugins** (боковая панель) → **Install**.
-2. Укажите spec: `dsh_languages` (npm) или `github:elims777/dsh_languages` (GitHub).
+2. Укажите spec: `dsh-languages` (npm) или `github:elims777/dsh-languages` (GitHub).
 3. Включите бандл и обновите страницу (Ctrl+R).
 4. **Settings → General → Language** → выберите язык.
 
 ### 2. Через CLI
 
 ```bash
-dsh plugin add dsh_languages
+dsh plugin add dsh-languages
 # или из git:
-dsh plugin add github:elims777/dsh_languages
+dsh plugin add github:elims777/dsh-languages
 ```
 
 Перезапустите приложение и выберите язык в настройках.
@@ -61,7 +61,7 @@ dsh plugin add github:elims777/dsh_languages
 индекс этого репозитория:
 
 ```
-https://raw.githubusercontent.com/elims777/dsh_languages/main/market/index.json
+https://raw.githubusercontent.com/elims777/dsh-languages/main/market/index.json
 ```
 
 Формат индекса — `market/index.json` (спецификация DSH `format: 1`); версия
@@ -70,13 +70,13 @@ https://raw.githubusercontent.com/elims777/dsh_languages/main/market/index.json
 
 ### 3. Вручную (офлайн)
 
-Скачайте `dsh_languages-<версия>.zip` из релизов, распакуйте и запустите:
+Скачайте `dsh-languages-<версия>.zip` из релизов, распакуйте и запустите:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File install.ps1
 ```
 
-Скрипт скопирует пакет в `%USERPROFILE%\.dsh\profiles\desktop\node_modules\dsh_languages`
+Скрипт скопирует пакет в `%USERPROFILE%\.dsh\profiles\desktop\node_modules\dsh-languages`
 и добавит его в `dsh.profile.bundles`. Перезапустите DSH.
 Профиль задаётся через `-Profile <имя>`, домашний каталог — через `-DshHome <путь>`.
 
@@ -143,7 +143,7 @@ npm run build
 
 ## Если что-то не так
 
-- **Языка нет в списке** — бандл не смонтировался: проверьте, что `dsh_languages`
+- **Языка нет в списке** — бандл не смонтировался: проверьте, что `dsh-languages`
   есть в `dsh.profile.bundles`, и перезапустите приложение (Ctrl+R недостаточно,
   граф композиции собирается при старте).
 - **Часть строк осталась английской** — это новые ключи из свежей версии DSH:
@@ -151,7 +151,7 @@ npm run build
 - **«Вход выполнен», но «Данные аккаунта пока недоступны»** — не локализация:
   панель берёт имя/почту из запроса к `platform.deepseek.com`, и он не проходит
   (протух токен или запрос режет сеть/WAF). Помогает повторный вход или другая сеть.
-- **Пустой экран после установки** — уберите `dsh_languages` из
+- **Пустой экран после установки** — уберите `dsh-languages` из
   `dsh.profile.bundles`, перезапустите и пришлите issue с версией DSH.
 
 ## Ограничения
@@ -167,11 +167,11 @@ npm run build
 
 ## English
 
-`dsh_languages` is a community language pack for the DeepSeek Harness web UI.
+`dsh-languages` is a community language pack for the DeepSeek Harness web UI.
 It registers every translated language through the public `ctx.locale` API, so no
 `app.asar` patching is needed. Russian is complete; other languages are listed in
 `locales.json` and can be added with `node tools/new-locale.mjs <id> "<label>"`.
-Install with `dsh plugin add dsh_languages`, pick a language in
+Install with `dsh plugin add dsh-languages`, pick a language in
 Settings → General → Language. Build: `npm run check`.
 
 ## Лицензия

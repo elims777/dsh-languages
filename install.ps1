@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-  Installs the dsh_languages language pack into a DeepSeek Harness profile.
+  Installs the dsh-languages language pack into a DeepSeek Harness profile.
 
 .DESCRIPTION
   Copies the package into <DSH_HOME>/profiles/<profile>/node_modules and adds it
@@ -31,7 +31,7 @@ if (-not (Test-Path (Join-Path $Source 'package.json'))) {
   throw "package.json not found in '$Source'. Run the script from the package folder or pass -Source."
 }
 if (-not (Test-Path (Join-Path $Source 'cordis.patch.yml'))) {
-  throw "cordis.patch.yml not found in '$Source' - this is not the dsh_languages package."
+  throw "cordis.patch.yml not found in '$Source' - this is not the dsh-languages package."
 }
 
 $profileDir = Join-Path $DshHome "profiles\$Profile"
@@ -40,7 +40,7 @@ if (-not (Test-Path $manifestPath)) {
   throw "Profile '$Profile' not found: $manifestPath. Pass -Profile <name> or -DshHome <path>."
 }
 
-$target = Join-Path $profileDir 'node_modules\dsh_languages'
+$target = Join-Path $profileDir 'node_modules\dsh-languages'
 $targetFull = [System.IO.Path]::GetFullPath($target)
 $sourceFull = [System.IO.Path]::GetFullPath($Source)
 if ($sourceFull -ne $targetFull) {
@@ -66,15 +66,15 @@ if ($null -eq $json.dsh.profile.bundles) {
 }
 
 $bundles = @($json.dsh.profile.bundles)
-if ($bundles -notcontains 'dsh_languages') {
-  $json.dsh.profile.bundles = @($bundles + 'dsh_languages')
+if ($bundles -notcontains 'dsh-languages') {
+  $json.dsh.profile.bundles = @($bundles + 'dsh-languages')
 }
 
 if ($null -eq $json.dependencies) {
   $json | Add-Member -NotePropertyName dependencies -NotePropertyValue ([pscustomobject]@{})
 }
-if (-not $json.dependencies.PSObject.Properties['dsh_languages']) {
-  $json.dependencies | Add-Member -NotePropertyName 'dsh_languages' -NotePropertyValue "file:$target"
+if (-not $json.dependencies.PSObject.Properties['dsh-languages']) {
+  $json.dependencies | Add-Member -NotePropertyName 'dsh-languages' -NotePropertyValue "file:$target"
 }
 
 $utf8 = New-Object System.Text.UTF8Encoding($false)

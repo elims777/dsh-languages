@@ -1,8 +1,8 @@
 {
   "format": 1,
   "title": {
-    "en": "dsh_languages — community translations",
-    "ru": "dsh_languages — переводы сообщества"
+    "en": "dsh-languages — community translations",
+    "ru": "dsh-languages — переводы сообщества"
   },
   "description": {
     "en": "A small plugin market index with language packs for DeepSeek Harness.",
@@ -28,7 +28,7 @@
   },
   "plugins": [
     {
-      "name": "dsh_languages",
+      "name": "dsh-languages",
       "title": {
         "en": "14 languages for the web interface",
         "ru": "14 языков для веб-интерфейса"
@@ -38,9 +38,9 @@
         "ru": "Русский, испанский, бразильский португальский, немецкий, французский, итальянский, польский, турецкий, японский, корейский, традиционный китайский, индонезийский, вьетнамский и хинди — по 2 886 строк на язык, через публичный ctx.locale."
       },
       "author": "elims777",
-      "homepage": "https://github.com/elims777/dsh_languages",
+      "homepage": "https://github.com/elims777/dsh-languages",
       "repository": {
-        "url": "https://github.com/elims777/dsh_languages"
+        "url": "https://github.com/elims777/dsh-languages"
       },
       "metadata": {
         "category": "locale",
@@ -71,7 +71,7 @@
           "publishTimestamp": 1793722785,
           "source": {
             "type": "git",
-            "url": "https://github.com/elims777/dsh_languages",
+            "url": "https://github.com/elims777/dsh-languages",
             "commit": "e56fbc552ac8c25e00940c632d827f3af1446eed"
           },
           "engines": {

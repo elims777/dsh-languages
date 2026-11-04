@@ -23,7 +23,7 @@ vm.createContext(sandbox);
 vm.runInContext(source, sandbox, { filename: 'lib/client.js' });
 
 if (!captured) fail('bundle did not call window.__ModuleLoader__.load');
-if (captured.id !== 'dsh_languages') fail(`unexpected module id ${captured.id}`);
+if (captured.id !== 'dsh-languages') fail(`unexpected module id ${captured.id}`);
 const moduleExports = captured.factory(() => {
   fail('the language pack must not require other modules');
 });

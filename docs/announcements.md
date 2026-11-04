@@ -1,13 +1,13 @@
 # Готовые посты для сообщества
 
-Плагин: **dsh_languages** — 14 языков интерфейса DeepSeek Harness.
-Ссылки: https://github.com/elims777/dsh_languages ·
-https://github.com/elims777/dsh_languages/releases/tag/v1.0.1
+Плагин: **dsh-languages** — 14 языков интерфейса DeepSeek Harness.
+Ссылки: https://github.com/elims777/dsh-languages ·
+https://github.com/elims777/dsh-languages/releases/tag/v1.0.1
 
 Установка в одну строку:
 
 ```
-dsh plugin add github:elims777/dsh_languages
+dsh plugin add github:elims777/dsh-languages
 ```
 
 ---
@@ -23,17 +23,17 @@ dsh plugin add github:elims777/dsh_languages
 
 **DeepSeek Harness теперь по-русски — и не только**
 
-Сделал плагин `dsh_languages`: 14 языков интерфейса, 63 экрана, 2 886 строк на язык.
+Сделал плагин `dsh-languages`: 14 языков интерфейса, 63 экрана, 2 886 строк на язык.
 
 - Русский, Español, Português (BR), Deutsch, Français, Italiano, Polski, Türkçe,
   日本語, 한국어, 繁體中文, Bahasa Indonesia, Tiếng Việt, हिन्दी
 - Без патчей `app.asar`: язык регистрируется через штатный `ctx.locale`
 - Непереведённое аккуратно падает в английский, ничего не ломается
-- Установка: `dsh plugin add github:elims777/dsh_languages`
-- Или через Plugins → Install → `github:elims777/dsh_languages`
+- Установка: `dsh plugin add github:elims777/dsh-languages`
+- Или через Plugins → Install → `github:elims777/dsh-languages`
 - После установки: Settings → General → Language
 
-Репозиторий: https://github.com/elims777/dsh_languages (MIT, неофициальный)
+Репозиторий: https://github.com/elims777/dsh-languages (MIT, неофициальный)
 Переводы — черновики: носители, приходите править, `CONTRIBUTING.md` внутри.
 
 #DeepSeekHarness #DSH #i18n
@@ -44,16 +44,16 @@ dsh plugin add github:elims777/dsh_languages
 
 **I translated DeepSeek Harness into 14 languages as a plugin**
 
-`dsh_languages` is a community language pack for the Harness web UI: 63 namespaces,
+`dsh-languages` is a community language pack for the Harness web UI: 63 namespaces,
 2,886 strings per language, registered through the public `ctx.locale` API — no
 `app.asar` patching, no rebuilds.
 
 Languages: Russian, Spanish, Portuguese (BR), German, French, Italian, Polish,
 Turkish, Japanese, Korean, Traditional Chinese, Indonesian, Vietnamese, Hindi.
 
-- Install: `dsh plugin add github:elims777/dsh_languages`
-- Repo: https://github.com/elims777/dsh_languages (MIT, unofficial)
-- Release: https://github.com/elims777/dsh_languages/releases/tag/v1.0.1
+- Install: `dsh plugin add github:elims777/dsh-languages`
+- Repo: https://github.com/elims777/dsh-languages (MIT, unofficial)
+- Release: https://github.com/elims777/dsh-languages/releases/tag/v1.0.1
 - Partially translated languages fall back to English per key.
 
 Drafts are machine-assisted; native speakers welcome to send PRs (there is a
@@ -64,9 +64,9 @@ Drafts are machine-assisted; native speakers welcome to send PRs (there is a
 ## Каталоги плагинов (куда стоит занести)
 
 1. **dsh.so** — форма https://www.dsh.so/submit/ (вставить
-   `https://github.com/elims777/dsh_languages`, тип «dsh plugin»).
+   `https://github.com/elims777/dsh-languages`, тип «dsh plugin»).
    Ограничение: их id должен слагифицироваться в `kebab-case`
-   (`^[a-z0-9]+(-[a-z0-9]+)*$`), а у нас имя `dsh_languages` — могут попросить
+   (`^[a-z0-9]+(-[a-z0-9]+)*$`), а у нас имя `dsh-languages` — могут попросить
    алиас/переименование; в форме можно указать npm-имя, если появится.
 2. **dshai.org** — ничего отправлять не нужно: коллектор берёт репозитории с
    GitHub-топиком `dsh-plugin` (у нас он есть) в течение суток.

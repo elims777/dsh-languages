@@ -1,17 +1,17 @@
-# Issue draft: list dsh_languages in the official plugin catalog
+# Issue draft: list dsh-languages in the official plugin catalog
 
-**Title:** Plugin proposal: `dsh_languages` — 14 community translations for the web UI
+**Title:** Plugin proposal: `dsh-languages` — 14 community translations for the web UI
 
 **Body:**
 
-Hi! I maintain `dsh_languages`, a community language pack for the web UI, and I'd
+Hi! I maintain `dsh-languages`, a community language pack for the web UI, and I'd
 like to ask how it can be listed in the official plugin catalog that ships with
 Desktop/Web, or in the default market index.
 
 ## What it is
 
-- **Repo:** https://github.com/elims777/dsh_languages
-- **Package:** `dsh_languages` (MIT, no runtime dependencies)
+- **Repo:** https://github.com/elims777/dsh-languages
+- **Package:** `dsh-languages` (MIT, no runtime dependencies)
 - **What it does:** registers 14 languages through the public `ctx.locale` API and
   ships a dictionary for every namespace of every `@deepseek-ai/dsh-client-*`
   package: Русский, Español, Português (Brasil), Deutsch, Français, Italiano,
@@ -52,7 +52,7 @@ CI checks that the committed bundle matches the sources.
    licensing, compatibility, maintenance) I can satisfy and re-submit against?
 
 The package already installs today with
-`dsh plugin add github:elims777/dsh_languages`, and the repo ships a market
+`dsh plugin add github:elims777/dsh-languages`, and the repo ships a market
 index at `market/index.json` for Discover.
 
 Thanks!
@@ -69,4 +69,4 @@ menu (Undo/Cut/Copy/Paste/Select All), the application/tray menus and the update
 dialogs stay English even when the Web UI is in another language. It would help
 to let the shell read locale dictionaries from the profile (for example
 `$DSH_HOME/profiles/<profile>/locales/<id>.json`) or from enabled plugins; see
-the full write-up in the `dsh_languages` repo: `docs/upstream-shell-menu.md`.
+the full write-up in the `dsh-languages` repo: `docs/upstream-shell-menu.md`.
