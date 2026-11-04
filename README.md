@@ -67,6 +67,12 @@ https://raw.githubusercontent.com/elims777/dsh-languages/main/market/index.json
 Формат индекса — `market/index.json` (спецификация DSH `format: 1`); версия
 плагина ставится по коммиту, поэтому установка воспроизводима.
 
+### Совместимость
+
+Проверено на DSH 0.2.1-rc.5 (Windows, Desktop): установка как bundle,
+14 языков переключаются вживую, fallback на английский, чистый uninstall.
+Отчёт: https://github.com/deepseek-ai/deepseek-harness/discussions/12172
+
 
 ### 3. Вручную (офлайн)
 
