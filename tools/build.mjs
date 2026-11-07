@@ -128,18 +128,44 @@ ${languageLiterals}
 \t\tconst DICTIONARIES = ${JSON.stringify(dictionaries)};
 \t\t/** Cordis client services this plugin needs. */
 \t\tconst inject = ["locale"];
+\t\t/** Report a non-fatal registration problem without failing the boot. */
+\t\tfunction report(error) {
+\t\t\ttry {
+\t\t\t\tconsole.warn("[dsh-languages]", error);
+\t\t\t} catch {}
+\t\t}
 \t\t/**
 \t\t* Register every language definition and its namespace dictionaries.
+\t\t* A rejected language or dictionary is skipped: the Web app must keep booting
+\t\t* even when a DSH update changes the locale API underneath the pack.
 \t\t* @param ctx - client cordis context.
 \t\t*/
 \t\tfunction apply(ctx) {
+\t\t\ttry {
 \t\t\tfor (const language of LANGUAGES) {
-\t\t\t\tctx.effect(() => ctx.locale.addLanguage(language), \`locale: \${language.id} language definition\`);
+\t\t\t\tctx.effect(() => {
+\t\t\t\t\ttry {
+\t\t\t\t\t\treturn ctx.locale.addLanguage(language);
+\t\t\t\t\t} catch (error) {
+\t\t\t\t\t\treport(error);
+\t\t\t\t\t\treturn () => {};
+\t\t\t\t\t}
+\t\t\t\t}, \`locale: \${language.id} language definition\`);
 \t\t\t}
 \t\t\tfor (const [language, namespaces] of Object.entries(DICTIONARIES)) {
 \t\t\t\tfor (const [ns, dictionary] of Object.entries(namespaces)) {
-\t\t\t\t\tctx.effect(() => ctx.locale.register(ns, language, dictionary), \`locale: \${language} \${ns} dictionary\`);
+\t\t\t\t\tctx.effect(() => {
+\t\t\t\t\t\ttry {
+\t\t\t\t\t\t\treturn ctx.locale.register(ns, language, dictionary);
+\t\t\t\t\t\t} catch (error) {
+\t\t\t\t\t\t\treport(error);
+\t\t\t\t\t\t\treturn () => {};
+\t\t\t\t\t\t}
+\t\t\t\t\t}, \`locale: \${language} \${ns} dictionary\`);
 \t\t\t\t}
+\t\t\t}
+\t\t\t} catch (error) {
+\t\t\t\treport(error);
 \t\t\t}
 \t\t}
 \t\texports.apply = apply;
