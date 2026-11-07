@@ -1,6 +1,4 @@
 {
-  "modelSignInRequired": "Model unavailable. Please sign in and try again.",
-  "sessionExpired": "You have signed out of your account, please log in again.",
   "onboardingArtworkLocale": "en",
   "onboardingWelcome": "Welcome to",
   "onboardingBrand": "DeepSeek Harness",
@@ -40,6 +38,8 @@
   "onboardingSaveFailed": "Could not save settings. Try again.",
   "onboardingRetry": "Retry",
   "onboardingLoading": "Loading settings…",
+  "modelSignInRequired": "Model unavailable. Please sign in and try again.",
+  "sessionExpired": "You have signed out of your account, please log in again.",
   "close": "Close",
   "addApiKey": "Add API Key",
   "retry": "Sign in again",

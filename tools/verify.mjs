@@ -53,11 +53,10 @@ moduleExports.apply(ctx);
 if (!moduleExports.inject?.includes('locale')) fail('inject must declare the locale service');
 
 const catalog = JSON.parse(fs.readFileSync(path.join(root, 'locales.json'), 'utf8')).languages;
-const namespaceCount = fs.readdirSync(path.join(root, 'locales', 'en')).length;
-const expected = catalog.filter((language) => {
-  const dir = path.join(root, 'locales', language.id);
-  return fs.existsSync(dir) && fs.readdirSync(dir).filter((name) => name.endsWith('.json')).length === namespaceCount;
-});
+const english = new Set(
+  fs.readdirSync(path.join(root, 'locales', 'en')).filter((name) => name.endsWith('.json')).map((name) => name.replace(/\.json$/, '')),
+);
+const expected = catalog.filter((language) => fs.existsSync(path.join(root, 'locales', language.id)));
 if (languages.length !== expected.length) fail(`expected ${expected.length} languages, got ${languages.length}`);
 for (const language of expected) {
   const registered = languages.find((entry) => entry.id === language.id);
@@ -66,15 +65,16 @@ for (const language of expected) {
   if (registered.fallback !== 'en') fail(`language ${language.id} must fall back to en`);
 }
 
-if (dictionaries.size !== expected.length * namespaceCount) {
-  fail(`expected ${expected.length * namespaceCount} dictionaries, got ${dictionaries.size}`);
-}
+if (dictionaries.size === 0) fail('no dictionaries registered');
 for (const [key, dict] of dictionaries) {
+  const [ns, locale] = key.split(':');
+  if (!english.has(ns)) fail(`dictionary ${key} names a namespace that does not exist`);
+  if (!catalog.some((language) => language.id === locale)) fail(`dictionary ${key} names an unknown language`);
   if (Object.keys(dict).length === 0) fail(`${key} is empty`);
 }
 
 const strings = [...dictionaries.values()].reduce((n, dict) => n + Object.keys(dict).length, 0);
 console.log(
   `OK: ${languages.map((language) => `${language.id}/${language.label}`).join(', ')}, ` +
-    `${namespaceCount} namespaces, ${strings} strings`,
+    `${dictionaries.size} dictionaries, ${strings} strings`,
 );

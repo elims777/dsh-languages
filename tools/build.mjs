@@ -53,31 +53,30 @@ for (const entry of catalog) {
 
 const dictionaries = {};
 const untranslated = {};
+const fallbackCounts = {};
 const complete = [];
 
 for (const language of languages) {
   const translated = readNamespaceDir(language.dir);
-  if (translated.size !== english.size) {
-    warnings.push(`${language.id}: ${translated.size}/${english.size} namespaces translated, skipped until complete`);
-    continue;
-  }
   complete.push(language);
   const dicts = {};
   const kept = [];
+  let fallbackKeys = 0;
   for (const [ns, en] of english) {
     const dict = translated.get(ns);
     if (!dict) {
-      problems.push(`${language.id}: missing locales/${language.id}/${ns}.json`);
+      warnings.push(`${language.id}: ${ns} is not translated yet, falls back to English`);
       continue;
     }
     const missing = Object.keys(en).filter((key) => !(key in dict));
     const extra = Object.keys(dict).filter((key) => !(key in en));
-    if (missing.length) problems.push(`${language.id}: ${ns}: missing ${missing.length} keys, e.g. ${missing.slice(0, 5).join(', ')}`);
-    if (extra.length) problems.push(`${language.id}: ${ns}: extra ${extra.length} keys, e.g. ${extra.slice(0, 5).join(', ')}`);
+    if (missing.length) warnings.push(`${language.id}: ${ns}: ${missing.length} new keys fall back to English`);
+    if (extra.length) warnings.push(`${language.id}: ${ns}: ${extra.length} stale keys dropped`);
+    fallbackKeys += missing.length;
 
     const ordered = {};
     for (const [key, source] of Object.entries(en)) {
-      const value = dict[key];
+      const value = dict[key] ?? source;
       if (typeof value !== 'string') {
         problems.push(`${language.id}: ${ns}: non-string value for ${key}`);
         continue;
@@ -85,17 +84,23 @@ for (const language of languages) {
       if (value.trim() === '' && source.trim() !== '') problems.push(`${language.id}: ${ns}: empty value for ${key}`);
       const want = (source.match(/\{\w+\}/g) ?? []).sort().join(',');
       const got = (value.match(/\{\w+\}/g) ?? []).sort().join(',');
-      if (want !== got) problems.push(`${language.id}: ${ns}: placeholders differ for ${key} (${want} vs ${got})`);
+      if (want !== got) {
+        warnings.push(`${language.id}: ${ns}: ${key} placeholders changed (${want} vs ${got}), falls back to English`);
+        ordered[key] = source;
+        fallbackKeys += 1;
+        continue;
+      }
       if (value === source && /[A-Za-z]{3}/.test(source)) kept.push(key);
       ordered[key] = value;
     }
     dicts[ns] = ordered;
   }
   for (const ns of translated.keys()) {
-    if (!english.has(ns)) problems.push(`${language.id}: ${ns}: translation without an English source`);
+    if (!english.has(ns)) warnings.push(`${language.id}: ${ns} no longer exists in this DSH version, dropped`);
   }
   dictionaries[language.id] = dicts;
   untranslated[language.id] = kept.length;
+  fallbackCounts[language.id] = fallbackKeys;
 }
 
 if (problems.length) {
